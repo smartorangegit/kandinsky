@@ -1,0 +1,241 @@
+.location-main {
+	position: relative;
+	min-height: 100%;
+	background: url('../img/location/location-bg.jpg') 0 22% no-repeat;
+	background-size: cover;
+	padding-top: 165px;
+	padding-bottom: 120px;
+	.post__title {
+		margin-left: 8%;
+		color: $colorBlue;
+		
+		&::before {
+			background: #234c5a;
+		}
+	}
+	
+	.view-more__link {
+		color: $colorBlue;
+	}
+
+	.view-more__line {
+		background: $colorBlue;
+	}
+}
+
+.location-main__description {
+	margin: 65px 0 0 8%;
+	@include calcF(30,36);
+	max-width: 480px;
+	font-family: 'AlergiaWideExtraLight';
+	transform: translateY(50px);
+	opacity: 0;
+	color: $colorBlue;
+	background: rgba(#fff,0.4);
+	padding: 20px;
+}
+.location-about {
+	padding-bottom: 45px;
+	
+}
+
+.location-about__item {
+	@include clearfix;
+	margin-top: 75px;
+	opacity: 0;
+	&-1{
+		transform: translateX(50px);
+		.location-about__title {
+			&::before {
+				top: 120%;
+				left: 0;
+			}
+		}
+	}
+	&-2{
+		transform: translateX(-50px);
+		.location-about__title {
+			
+			&::before {
+				top: 120%;
+				right: 0;
+			}
+		}
+		.location-about-pict {
+			float: right;
+			margin-right: 5%;
+		}
+	}
+}
+.location-about__text, .location-about-pict {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.location-about-pict {
+	width: 390px;
+	img {
+		width: 100%;
+	}
+}
+.location-about__text {
+	max-width: 365px;
+	margin-left: 15%;
+	color: #7f7f7f;
+}
+
+.location-about__title {
+	font-family: 'AlergiaWideExtraLight';
+	@include calcF(30,36);
+	max-width: 220px;
+	position: relative;
+	&::before {
+		content: "";
+		position: absolute;
+		height: 1px;
+		width: 80rem;
+		background: #e6e6e6;
+	}
+}
+
+.location-about__paragraph {
+	@include calcF(14,24);
+	margin-top: 20px;
+}
+
+.location-map__inner {
+	position: relative;
+}
+
+.location__flat-choose--btn {
+	text-align: right;
+	padding-right: 5%;
+}
+
+.location__flat-choose--link {
+	text-decoration: none;
+    color: #234c5a;
+    letter-spacing: .2em;
+    display: inline-block;
+    margin-top: 40px;
+
+}
+
+.main-map {
+	height: 620px;
+	width: 100%;
+}
+
+.map__infostruction, .map__info {
+	position: absolute;
+}
+
+.map__infostruction {
+	top: 125px;
+	left: 0;
+	width: 380px;
+	background: #fff;
+	padding: 30px 30px 30px 90px;
+}
+.map__infostruction_list {
+	@include calcF(12,24);
+	color: #000;
+}
+
+.map__infostruction_item {
+	position: relative;
+	i {
+		vertical-align: middle;
+	}
+	
+}
+
+.btn-filter {
+	background: none;
+	border: none;
+	cursor: pointer;
+	outline: none;
+	color: $colorBlue;
+	position: relative;
+	display: inline-block;
+	z-index: 1;
+	&.deactive {
+		color: #97a2a6;
+		.map-ico__wrapper {
+			margin-right: 0;
+		}
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+	
+}
+.map-ico__wrapper {
+	display: inline-block;
+	vertical-align: middle;
+	width: 35px;
+	text-align: center;
+	margin-right: 25px;
+	transition: all 0.4s;
+}
+.gm-style-iw {
+	text-align: center;
+}
+
+.map__info-marker {
+	i {
+		margin-right: 10px;
+	}
+	p {
+		margin-top: 10px;
+	}
+}
+
+.map__info_container {
+	max-width: $mainWidth;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: 0 auto;
+}
+
+.map__info {
+	right: 10%;
+	top: 0;
+	color: #000;
+}
+.map__info_title {
+	margin-top: 60px;
+	text-transform: uppercase;
+	@include calcF(36,36);
+	letter-spacing: 0.025em;
+	font-family: 'OksanaSansLight';
+}
+
+.map__info_subtitle {
+	margin-top: 25px;
+	@include calcF(16,18);
+	letter-spacing: 0.025em;
+	text-transform: uppercase;
+	font-family: 'OksanaSansDemiBold';
+}
+.map__info_list {
+	@include calcF(12,20);
+	letter-spacing: 0.025em;
+	list-style-type: disc;
+}
+.map__info_item {
+	margin-left: 15px;
+	padding-left: 10px;
+}
+
+.markers__text {
+	display: none;
+}
+
+.marker__title {
+	font-size: 1.2em;
+	font-family: 'OksanaSansDemiBold';
+}

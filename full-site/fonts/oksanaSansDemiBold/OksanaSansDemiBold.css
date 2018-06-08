@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'OksanaSansDemiBold';
+    src: url('fonts/OksanaSansDemiBold.eot');
+    src: url('fonts/OksanaSansDemiBold.eot') format('embedded-opentype'),
+         url('fonts/OksanaSansDemiBold.woff2') format('woff2'),
+         url('fonts/OksanaSansDemiBold.woff') format('woff'),
+         url('fonts/OksanaSansDemiBold.ttf') format('truetype'),
+         url('fonts/OksanaSansDemiBold.svg#OksanaSansDemiBold') format('svg');
+}

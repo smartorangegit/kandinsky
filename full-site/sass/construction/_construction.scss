@@ -1,0 +1,368 @@
+.construction {
+	/* background:  url('../img/construction/construction-bg.jpg') 0 0 no-repeat;
+	background-size: cover;
+	background-attachment: fixed; */
+	
+	background: $postBG;
+	flex: 1 0 auto;
+	padding-bottom: 50px;
+	/* .header__lang, .menu-title, .menu-title__lang, .menu-btn1 {
+		color: #fff !important;
+	} */
+	.menu__line {
+		background: #fff !important;
+	}
+	.lang__text {
+		&::before {
+			background: url(../img/arrow-down-black.png) 0 0 no-repeat !important;
+		}
+	}
+
+	.news__title {
+		color: $colorBlue !important;
+		&:after {
+			background: url(../img/curve-line-blue.png) 0 0 repeat;
+		}
+	}
+}
+
+.construction__status-text{
+	@include calcF(14,20);
+	
+	font-family: 'OksanaSansDemiBold';
+	text-align: center;
+	margin-top: 40px;
+	p {
+		margin-top: 15px;
+	} 
+}
+
+.construction__progress--wrapper {
+	max-width: 1030px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.construction__progress {
+	width: 80%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.construction__webcam {
+	width: 20%;
+}
+
+.construction__webcam--link {
+	text-decoration: none;
+	color: $colorBlue;
+	letter-spacing: 0.2em;
+
+}
+.construction__progress--items {
+	width: 100%;
+}
+.construction__progress--item {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	padding: 10px 30px 10px 0;
+}
+
+.construction__progress--line {
+	position: absolute;
+	background: $colorBlue;
+	top: 0;
+	left: 0;
+	width: 30%;
+	height: 100%;
+	color: #fff;
+}
+
+.construction__progress--container {
+	display: block;
+	overflow: hidden;
+	transition: 1s all;
+	width: 80%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+.construction__progress--val {
+	position: relative;
+	&:after {
+		content: "%";
+	}
+}
+
+.construction__progress--name {
+	width: 35%;
+	padding-right: 15px;
+}
+
+.construction__progress--val {
+
+}
+
+.construction__progress--bar {
+	position: relative;
+	width: 65%;
+	height: 30px;
+	border: 1px solid $colorBlue;
+	text-align: center;
+	line-height: 30px;
+	overflow: hidden;
+}
+
+.construction__progress--specific-data {
+	box-sizing: border-box;
+	position: absolute;
+	text-align: left;
+	background-color: $postBG;
+	padding: 5px;
+	bottom: 50px;
+	width: 100%;
+	border: 1px solid $colorBlue;
+
+	transition: all .5s;
+	opacity: 0;
+	left: -100px;
+}
+
+.construction__progress--specific-data::after {
+	content: '';
+	display: block;
+	position: absolute;
+	bottom: -15px;
+	left: 50%;
+	transform: translate(-50%, 0%);
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 15px 8px 0 8px;
+	border-color: $colorBlue transparent transparent transparent;
+}
+
+.construction__progress--bar:hover {
+	overflow: visible;
+}
+
+.construction__progress--bar:hover .construction__progress--specific-data {
+	opacity: 1;
+	left: 0;
+}
+
+.construction__progress--specific-data-val {
+	display: block;
+}
+
+.construction__list {
+	max-width: 1060px;
+	margin: 0 auto;
+	margin-top: 30px;
+	line-height: 0;
+	font-size: 0;
+}
+.construction-plan {
+	margin-top: 50px;
+}
+.construction__title_text {
+	text-align: center;
+	color: #fff;
+	@include calcF(14,30);
+	font-family: 'OksanaSansDemiBold';
+}
+
+.construction_item {
+	font-size: 16px;
+	width: 33.33333%;
+	padding: 0 15px;
+	margin-bottom: 30px;
+	display: inline-block;
+	transition: all 1s;
+	&:hover {
+		transform: scale(1.05);
+	}
+}
+.construction_item_iner {
+	position: relative;
+}
+.construction_item_link {
+	display: block;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.construction__info {
+	font-size: 0;
+	line-height: 0;
+	text-align: justify;
+	padding: 10px 25px;
+	color: #7f7f7f;
+	background: #fff;
+	&::after {
+		content: "";
+		display: inline-block;
+		width: 100%;
+		opacity: 0;
+		visibility: hidden;
+	}
+	i {
+		margin-right: 10px;
+		vertical-align: middle;
+	}
+}
+
+.construction__info_item {
+	
+	font-size: 14px;
+	display: inline-block;
+}
+.construction__pict {
+	width: 100%;
+	img {
+		width: 100%;
+		display: block;
+	}
+}
+.construction__text {
+	background: #fff;
+	padding: 25px 30px 30px;
+	@include calcF(18,28);
+	font-family: 'AlergiaWideRegular';
+	.orange-text {
+		font-family: 'AlergiaWideMedium';
+	}
+	.italic-text {
+		font-family: 'AlergiaWideItalic';
+	}
+}
+
+.construction__pagination {
+	text-align: center;
+	margin-top: 35px;
+}
+.construction__pagination_inner {
+	display: inline-block;
+}
+.construction__pagination_list {
+	display: inline-block;
+}
+
+.construction__pagination_item {
+	display: inline-block;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.pagination-prev {
+	margin-right: 15px;
+
+}
+.pagination-next {
+	margin-left: 15px;
+	
+}
+
+.construction__pagination_item {
+	position: relative;
+	width: 30px;
+	height: 30px;
+	border: 1px solid transparent;
+	text-align: center;
+	&.active {
+		border: 1px solid $colorBlue;
+		border-radius: 50%;
+	}
+}
+
+.construction__pagination_link {
+	display: block;
+	text-decoration: none;
+	@include calcF(14,30);
+	color: $colorBlue;
+	font-family: 'OksanaSansDemiBold';
+}
+
+@media screen and (max-width: $mainWidth) { 
+	.construction__list {
+		padding: 0 25px;
+	}
+
+	.construction__progress {
+		width: 100%;
+	}
+
+	.construction__progress--wrapper {
+		display: block;
+		padding: 0 25px;
+	}
+
+	.construction__webcam {
+		padding-top: 15px;
+		width: 100%;
+		text-align: center;
+	}
+}
+
+@media screen and (max-width: $tabletWidth) { 
+	.construction_item {
+		width: 50%;
+	}
+
+	.construction__progress--item {
+		width: 100%;
+		padding-right: 0;
+	}
+
+	.construction__progress--wrapper {
+		padding: 0 40px;
+	}
+}
+
+@media screen and (max-width: $mobileWidth) { 
+	.construction {
+		.menu__line  {
+			background: $colorBlue !important;
+		}
+	}
+	.construction__list {
+		padding: 0;
+	}
+	.construction__progress--wrapper {
+		padding: 0 15px;
+	}
+}
+@media screen and (max-width: $mediumMobWidth) { 
+	.construction_item {
+		width: 100%;
+	}
+	.construction__pagination_inner {
+		display: flex;
+		justify-content: center;
+	}
+	.construction__pagination_list {
+		display: flex;
+	}
+
+	.construction__progress--item {
+		display: block;
+		text-align: center;
+	}
+
+	.construction__progress--bar {
+		width: 100%;
+		margin-top: 15px;
+	}
+
+	.construction__progress--name {
+		padding-right: 0;
+	}
+}

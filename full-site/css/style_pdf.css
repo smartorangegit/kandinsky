@@ -1,0 +1,432 @@
+ body {
+  font-family: "myriadpro";
+  width: 100%;
+  color: #000;
+}
+
+ .midle{
+	  background: url('/img/PDFbacgraund.png') no-repeat;
+	      width: 100%;
+	  background-size: 100% 100%;
+ }
+.svg{
+	width:100%;
+	height: 100%;
+margin-top:-100%;
+		z-index:0;
+
+	
+}
+.ch-left {
+  width: 240px;
+  height: 85%;
+ float:left;
+ text-align: center;
+ color: #000;
+}
+.ch-right {
+/*width: 200px; height: 80%;*/
+max-width: 300px;
+min-width:180px;
+ height: 90%;
+ float:right;
+ text-align: center;
+ color: #000;
+
+}
+.r_ch-right{
+	width: 170px;
+}
+.ch-right2 {
+ float:right;
+ text-align: center;
+ color: #000;
+ position:absolute;
+ top:0px;
+ right:60px;
+}
+
+
+.r_ch-sec {
+height:15px;
+margin-top:0px;
+padding-bottom:0px;
+background: #ececec;
+border-top: 1px solid #fff;
+}
+
+.r_ch-sec_buttom {
+height:15px;
+margin-top:0px;
+padding-bottom:0px;
+float:left;
+width:120px;
+}
+.r_ch-sec-b{
+	
+	background:#dddddd
+}
+
+.r_ch-sec .ch-text2 {
+	padding:14px 0 14px 0;
+	font-family: "oksanasans";
+
+    color: #4e4c4c;	
+	    text-align: center;
+    font-size: 26px;
+	line-height:1.2;
+
+    margin-top:0px;
+}
+	.r_ch-sec .ch-text, .r_ch-sec_buttom .ch-text {
+	padding:0px 5px;
+    font-family: "oksanasans";
+    color: #4e4c4c;
+    font-size: 16px;
+	    text-align: center;
+	  margin-top: -35px;
+}
+
+
+.ch-sec {
+height:30px;
+margin-top:-30px;
+padding-bottom:60px;
+
+}
+.ch-sec2 {
+height:10px;
+margin-top:-30px;
+}
+.ch-sec3 {
+height:10px;
+margin-top:-50px;
+}
+.ch-sec5 {
+margin-top:-40px;
+}
+.left-sp{
+	text-align:left;
+	float:left;
+}
+.right-sp{
+	text-align:right;
+}
+.ch-sec-bg{
+
+/*background-color:#ebecf1;*/	
+	
+}
+.ch-sec .ch-text, .r_ch-sec_buttom .ch-text {
+	padding:0px 10px;
+    font-family: "oksanasans";
+  
+    color: #4e4c4c;
+    font-size: 20px;
+	    text-align: center;
+	  margin-top: -35px;
+}
+
+.ch-maplevel-center{
+	margin:0 auto;
+	width: 280px;
+}
+.ch-text-2 {
+    font-family: "oksanasans";
+    color: #4d4d4d;
+    font-size: 25px;
+	
+	    text-align: center;
+}
+.ch-sec .ch-text2, .r_ch-sec_buttom .ch-text2 {
+	padding:20px 0 20px 0;
+	font-family: "oksanasans";
+	/*font-weight: bold;*/
+    color: #b17c57;	
+	    text-align: center;
+    font-size: 25px;
+
+    margin-top:0px;
+	
+	
+}
+.ch-text3{
+	padding:10px;
+	font-family: "gothamreg";
+    text-transform: uppercase;
+    color: #4d4d4d;
+	    font-size: 18px;
+		text-align:left;
+		padding-left:20px;
+}
+.b-text{font-size: 25px; 
+font-weight: bold; 
+font-family: "oksanasans";
+}
+.ch-a{
+	float:left;
+	
+}
+.ch-b{
+	float:right;
+	
+}
+.ch-sec .ch-sec-num {
+    font-size: 70px;
+	line-height:2;
+}
+
+.ch-center svg {
+    width: 100%;
+   
+}
+.ch-center{
+	display:block;
+	float:left;
+	width:35%;
+	height:80%;
+	
+}
+.ch-center:before{
+	content:"";
+	display: inline-block;
+	vertical-align: middle;
+	height: 100%;
+	
+}
+.compass,.call{
+	width: 50%;
+    float: left;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+    display: block;
+}
+footer {
+    opacity: 0.8;
+    bottom: 0;
+}
+.footer, footer {
+    width: 100%;
+    position: absolute;
+    height: 44px;
+    opacity: 0.8;
+    bottom: 0;
+}
+.foot-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+.allright {
+    font-size: 25px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.ch-imgsec{
+width: 250px;
+padding:20px 0px;	
+}
+.ch-maplevel{
+	text-align:center;
+	margin-left:0px;
+	vertical-align:middle;
+	padding: 350px 0 0px 0;     
+	margin-right: 20px;
+}
+
+.center{
+position: absolute;
+text-align:center;
+vertical-align:middle;
+}
+.r_center{
+margin-top: 320px;
+padding-left:10px;
+
+}
+
+.clear{
+clear: both;	
+}
+.center4{
+width:100%;	
+}
+
+/* line 1642, ../sass/choise.scss */
+.ch-table .table-item1, .ch-table .table-item3, .ch-table .table-item5 {
+  text-align: left;
+
+  width: 164px;
+	float: left;
+	  font-family: "oksanasans";
+	  color: #4d4d4d;
+}
+/* line 1647, ../sass/choise.scss */
+.ch-table .table-item2, .ch-table .table-item4, .ch-table .table-item6 {
+  text-align: right;
+ /* padding-left: 10px;*/
+  width: 75px;
+  float: left;
+  font-weight:bold;
+  font-family: "oksanasans";
+}
+/* line 1653, ../sass/choise.scss */
+.table-item1-li{
+	font-size: 30px;
+	font-weight: bold;
+	padding:20px 0px 5px;
+	font-family: "oksanasans";
+}
+.ch-table li {
+  list-style: none;
+    text-transform: capitalize;
+  line-height: 35px; 
+}
+.ch-table ul {
+  padding:0px 0px 0px 0px;
+      margin: 0px;
+	  margin-top:5px;
+	    font-size: 18px;
+		
+}
+
+
+ TABLE {
+    border-collapse: collapse; /* Убираем двойные границы между ячейками */
+    border: 0px solid #888888; /* Рамка вокруг таблицы */
+   }
+ .table   TD, TH {
+    padding: 5px; /* Поля вокруг текста */
+    border: 2px solid green; /* Рамка вокруг ячеек */
+   }
+   .tit1, .tit2{
+    font-weight: bold;
+	width: 132px;
+    float: left;
+	font-size: 18px;
+	line-height: 25px;
+   }
+    .tit1{
+	text-align: right;
+	 padding-right:10px;	
+	}
+   .tit2{
+	 border-left: 1px solid #888888;
+	 width: 80px;
+	 text-align: left;
+	 padding-left:10px;
+   }
+   .chimg{
+   width: 100%; 
+   padding:40px 0px 30px 50px;
+   }
+   .logo, .logo2{
+padding:15px 0px 42px 0px;
+   } .logo2{
+	padding:150px 0px 32px 0px;   
+   }
+   .logo-img{
+ 
+	  height:140px;
+   }
+.ch-sec-tel{
+	display:block;
+	position:absolute;
+	  padding-left: 600px;
+	  margin-right: -670px;
+	  margin-top: -85px;
+}
+.ch-sec-logo{
+	display:block;
+	position:absolute;
+
+padding:30px 0 0 10px;	
+	  margin-right: -90px;
+	 
+	
+}
+
+   .block-foot{
+       margin-top: 15px;
+	   height:10%;
+	   }
+	   .footer-img{
+	   /* margin-top: -10px;*/
+		padding:0px 0px;
+		margin-bottom:0px;
+	   }
+.img-center{
+max-height:590px;
+ max-width:100%;
+ padding-left:10px;
+
+} 
+.r_img-center{
+max-height:500px;
+} 
+
+.ch-page1{
+width: 100%;
+height:	80%;
+padding:20px 20px 40px 20px;
+	
+}
+.ch-{
+height:	1px;	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+.compass-ico{
+    background: url('../img/apartments/apartments-sprites.png') no-repeat;
+}
+
+.apartments-compass {
+    display: inline-block;
+    position: relative;
+}
+
+.compass-ico {
+       background-position: 0 0 !important;
+    width: 40px;
+    height: 43px;
+}
+.apartments-compass-span {
+    position: absolute;
+    display: block;
+    width: 100%;
+    font-size: 0.75em;
+    line-height: 2;
+}
+
+.compass-north {
+ display:none;
+	 float:right;
+}
+
+.compass-west{
+	    position: absolute;
+    right: 0%;
+    top: 0%;
+    text-align: right;
+    padding-right: 5px;
+}
+.compass-east {
+    left: 100%;
+    top: 32%;
+    text-align: left;
+    padding-left: 5px;
+}
+.compass-south {
+    top: 100%;
+    text-align: center;
+}
+

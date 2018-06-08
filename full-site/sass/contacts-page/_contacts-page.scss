@@ -1,0 +1,30 @@
+
+@media screen and (min-width: $mainWidth) {
+	.contacts-page {
+		flex: 1 0 auto;
+		background: #f4ede7;
+		display: flex;
+		.container {
+			margin: auto;
+		}
+	}
+}
+
+@media screen and (max-width: $mainWidth) {
+	.contacts-page {
+		.contacts__inner {
+			margin-top: 50px;
+		}
+	}
+}
+.collaboration_btn {
+	text-decoration: none;
+	color: #fff;
+	background-color: #234c5a;
+	display: inline-block;
+	padding: 5px;
+	border-radius: 2px;
+	&:hover {
+		background-color: #b17c57;
+	}
+}

@@ -1,0 +1,223 @@
+.architection-main {
+	background: url('../img/architection/architection-bg.jpg') center 48% no-repeat;
+	background-size: cover;
+	min-height: 100%;
+	padding-top: 125px;
+	.post__title {
+		color: $colorBlue;
+		&::before {
+			content: "";
+			background: $orangeColor;
+		}
+	}
+	.view-more__link {
+		color: $colorBlue;
+	}
+	.view-more__line {
+		background: $colorBlue;
+	}
+	.header__lang, .menu-title {
+		color: #fff;
+	}
+	.menu__line {
+		background: #fff;
+	}
+	.lang__text {
+		&::before {
+			background: url(../img/arrow-down-white.png) 0 0 no-repeat;
+		}
+	}
+
+}
+
+.architection-main__title {
+	opacity: 0;
+	transform: translateY(40px);
+	margin-left: 60px;
+	display: inline-block;
+	vertical-align: top;
+	@include calcF(30,36);
+	max-width: 430px;
+	font-family: 'AlergiaWideExtraLight';
+}
+.architection__about_item {
+	//opacity: 0;
+	@include clearfix;
+	margin-bottom: 80px;
+}
+
+.architection__about {
+	max-width: 1360px;
+	margin: 0 auto;
+	padding-top: 75px;
+}
+.architection__about_info {
+	max-width: 380px;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 8%;
+}
+.architection__about_title {
+	opacity: 0;
+	transform:  translateY(-30px);
+	transition: 2s all;
+	@include calcF(30,36);
+	font-family: 'AlergiaWideExtraLight';
+	max-width: 220px;
+	position: relative;
+	&::before {
+		transition: 3s all;
+		content: "";
+		position: absolute;
+		top: 120%;
+		left: 0;
+		height: 1px;
+		width: 0;
+		background: #e6e6e6;
+	}
+	&.animate {
+		transform:  translateY(0);
+		opacity: 1;
+		
+	}
+	&.underline {
+		&::before {
+			width: 70rem;
+		}
+	}
+}
+
+.architection__about_text {
+	@include calcF(14,24);
+	color: #7f7f7f;
+	padding-right: 20px;
+	margin-top: 25px;
+	opacity: 0;
+	transform:  translateY(30px);
+	transition: 2s all;
+	&.animate {
+		transform:  translateY(0);
+		opacity: 1;
+	}
+}
+
+.architection__about_pict {
+	position: relative;
+	width: 40%;
+	display: inline-block;
+	vertical-align: middle;
+	img {
+		width: 100%;
+		position: relative;
+		display: block;
+		opacity: 0;
+	}
+}
+.right-direction {
+	text-align: right;
+}
+
+.architection__about_item-2 {
+
+	.architection__about_title {
+		&::before {
+			left: auto;
+			right: 0;
+		}
+	}
+	.architection__about_info {
+		margin-left: 14%;
+		padding-left: 10px;
+		max-width: 400px;
+		float: left;
+	}
+
+	.architection__about_pict {
+		float: right;
+	}
+}
+
+.architection__about_item-3 {
+	.architection__about_info {
+		margin-left: 14%;
+	}
+}
+
+.modern-place__pict {
+    img {
+        position: relative;
+    }
+}
+
+
+@media screen and (max-width: $mobileWidth) {
+    .apartments {
+        padding-top: 40px;
+    }
+
+    .apartments__inner {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin-top: 50px;
+
+    }
+    .apartments__calc, .apartments__info {
+        position: static;
+    }
+    .apartments__calc {
+        width: 100%;
+        text-align: center;
+    }
+    .apartments__calc_btn {
+        margin-top: 15px;
+    }
+    .apartments__pict {
+        width: 100%;
+        margin: 25px auto 0;
+    }
+    .apartments__plan {
+        padding: 0 10%;
+    }
+    .apartments__plan {
+        padding-top: 15px;
+    }
+    .apartments__info {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 15px;
+        align-items: center;
+        width: 100%;
+        padding: 0 15px;
+    }
+    .apartments__floor-choose {
+        margin: auto;
+    }
+    .apartments__section {
+        margin: auto 0;
+    }
+
+    .apartments__param {
+        display: none;
+    }
+
+    .apartments__color_item {
+        .circle {
+            display: block;
+            margin: 0 auto;
+        }    
+    }
+}
+
+@media screen and (max-width: $smallWidth) {
+    .apartments__plan {
+        padding: 0;
+    }
+    .header__logo {
+        width: 130px;
+        margin-top: 5px;
+    }
+}
+
+
+

@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'AlergiaWideItalic';
+    src: url('fonts/AlergiaWideItalic.eot');
+    src: url('fonts/AlergiaWideItalic.eot') format('embedded-opentype'),
+         url('fonts/AlergiaWideItalic.woff2') format('woff2'),
+         url('fonts/AlergiaWideItalic.woff') format('woff'),
+         url('fonts/AlergiaWideItalic.ttf') format('truetype'),
+         url('fonts/AlergiaWideItalic.svg#AlergiaWideItalic') format('svg');
+}

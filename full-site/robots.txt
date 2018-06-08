@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /*from=adwords
+Disallow: /*gclid=
+Disallow: /*utm_source=
+
+Sitemap: http://kandinsky-residence.com.ua/sitemap.xml

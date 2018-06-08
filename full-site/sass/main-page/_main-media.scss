@@ -1,0 +1,256 @@
+@media screen and (max-width: $mainWidth) {
+	
+	.modern-place__pict-1 {
+		width: 44%;
+	}
+	.about-company__pict {
+		width: 45%;
+		
+	}
+}
+
+@media screen and (max-width: $tabletWidth) {
+	.about-kand__left-pict {
+		width: 20%;
+	}
+	.about-company__pict {
+		width: 50%;
+		margin-top: 0;
+		margin-right: 30px;
+	}
+	.about-kand__right-pict {
+		width: 40%;
+	   	bottom: -280px;
+	}
+	.contacts__form_wrapper {
+		padding: 0 10px;
+		width: 95%;
+		margin: 0 auto;
+
+	}
+	.about-company {
+		padding-bottom: 40px;
+		.container {
+			display: flex;
+			flex-direction: column;
+		}
+		.about {
+			width: 52%;
+			order:10;
+			width: 93%;
+			max-width: none;
+			margin-top: 25px;
+			padding: 0 10px;
+		}
+		.about-company__pict {
+			order: 5;
+			max-width: none;
+			width: 100%;	
+		}
+	}
+	.about-kand {
+		.container {
+			padding-bottom: 40px;
+		}
+	}
+	.modern-place {
+		.about__text{
+			text-align: left;
+		}
+	}
+	.contacts__inner {
+		padding-top: 55px;
+	}
+	.contacts__info {
+		padding-bottom: 30px;
+		text-align: justify;
+		width: 100%;
+		position: static;
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 100%;
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+	.contacts__info_list {
+		margin-top: 15px;
+	}
+	.contacts__info_container {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.contacts__info_title {
+		display: inline-block;
+		vertical-align: top;
+	}
+	.contacts__info_subtitle {
+		margin-top: 10px;
+	}
+	.contacts__info_marketing {
+		margin-right: 50px;
+	}
+
+	.about-kand__popup_inner {
+		padding: 30px;
+	}
+}
+
+@media screen and (max-width: $mobileWidth) {
+
+	.contacts__info_marketing {
+		margin-right: 0;
+	}
+	.main-page__title {
+		@include calcF(30,48);
+		margin: 0 auto;
+		max-width: 350px;
+		display: block;
+		margin-top: 160px;
+		width: 95%;
+		.brown-line {
+			width: 90px;
+		}
+	}
+	.grad__title_logo {
+		padding: 0 30px;
+		img {
+			width: 100%;
+		}
+	}
+	.main-page__inner {
+		margin: 0;
+	}
+	.about-kand__left-pict {
+		width: 200px;
+		margin: 0 auto;
+		float: none;
+	}
+	.grad__title_body {
+		width: 95%;
+	}
+	.contacts__form {
+		input {
+			width: 100% !important;
+		}
+	}
+	.about {
+		width: 85% !important;
+		float: none;
+	}
+	.about-kand {
+		&:before {
+			display: none;
+		}
+		.about {
+			margin-top: 30px;
+			
+		}
+	}
+	.about-kand__right-pict {
+		position: static;
+		width: 80%;
+		margin: 60px auto 0;
+	}
+	.about-company {
+		.container {
+			padding-top: 10px;
+		}
+	}
+	.about-company__pict {
+		width: 80%;
+		float: none;
+		margin: 80px auto 0;
+	}
+	.modern-place {
+		padding-bottom: 20px;
+		.container {
+			padding-top: 0;
+		}
+	}
+	.modern-place__pict-1 {
+		position: relative;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		width: 75%;
+		margin: 0 auto;
+	}
+	.modern-place__title_inner {
+		float: none;
+		width: 85%;
+		text-align: center;
+		margin: 20px auto 0;
+		.about__title {
+			max-width: none;
+			@include calcF(24,30);
+		}
+	}
+	.modern-place__pict-2 {
+		margin-top: 30px;
+	}
+
+	.modern-place__pict-3 {
+		width: 47%;
+		float: none;
+		margin: 20px auto 0;
+	}
+	.contacts__info {
+		padding-left: 20px;
+	}
+
+	.contacts__info_title {
+		width: 100%;
+	}
+	.contacts__info_subtitle {
+		margin-top: 30px;
+	}
+	.contacts__info_container {
+		width: 100%;
+	}
+	.contacts__form_wrapper {
+		.form__title {
+			@include calcF(24,30);
+		}
+		input {
+			margin-left: 0 !important;
+			float: none !important;
+		}
+	}
+	.contacts__form {
+		padding-right: 40px;
+	}
+	.input-container {
+		margin-left: 0;
+	}
+	.about-kand__popup_pict {
+		display: none;
+	}
+	.about-kand__popup_text {
+		width: 100%;
+		.about__text {
+			margin-left: 0;
+		}
+	}
+}
+
+@media screen and (max-width: $smallWidth) {
+	.main-page__title {
+		
+		.brown-line {
+			width: 60px;
+		}
+	}
+	.contacts__form_wrapper {
+		padding: 0;
+		width: 100%;
+		.contacts__form {
+			padding: 20px 15px 20px;
+		}
+	}
+	.bordered__form {
+		display: none;
+	}
+}

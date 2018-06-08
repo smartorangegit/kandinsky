@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'OksanaSansLight';
+    src: url('fonts/OksanaSansLight.eot');
+    src: url('fonts/OksanaSansLight.eot') format('embedded-opentype'),
+         url('fonts/OksanaSansLight.woff2') format('woff2'),
+         url('fonts/OksanaSansLight.woff') format('woff'),
+         url('fonts/OksanaSansLight.ttf') format('truetype'),
+         url('fonts/OksanaSansLight.svg#OksanaSansLight') format('svg');
+}

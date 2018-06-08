@@ -1,0 +1,141 @@
+.developers-wrapper {
+	min-height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	background: url('../img/developers/developers-bg.jpg') center center no-repeat;
+	background-size: cover;
+	.header__lang, .menu-title {
+		color: #fff;
+	}
+	.menu__line {
+		background: #fff;
+	}
+	.lang__text {
+		&::before {
+			background: url(../img/arrow-down-white.png) 0 0 no-repeat;
+		}
+	}
+	.order-call {
+		color: #fff;
+	}
+	.content {
+		background: none;
+	}
+
+	.footer {
+		background: none;
+	}
+
+	.all-rights, .smarto-developer__link {
+		color: #fff;
+	}
+}
+
+.developers {
+	opacity: 0;
+}
+
+.developers-title {
+	@include calcF(30,36);
+	color: $colorBlue;
+	font-family: 'AlergiaWideExtraLight';
+	text-align: center;
+}
+.developers__list {
+	text-align: justify;
+	max-width: 800px;
+	margin: 40px auto 0;
+	&::after {
+		content: "";
+		width: 100%;
+		display: inline-block;
+		visibility: hidden;
+		opacity: 0;
+	}
+}
+
+.other-projects__title {
+	margin-top: 20px;
+}
+.owl_custom_stying {
+	width: 90%;
+	margin: 0 auto;
+}
+.owl-stage {
+	display: flex;
+	align-items: center;
+}
+.owl-prev, .owl-next {
+	position: absolute;
+	top: 50%;
+	width: 14px;
+	height: 25px;
+	background-image: url('/img/other-projects-logos/owl-carousel_left-right_spritesheet.png');
+}
+.owl-prev, {
+	left: -14px;
+}
+.owl-next {
+	right: -14px;
+	background-position: -14px 0px;
+}
+.other-projects__project {
+	img {
+		max-width: 80%;
+		margin: 0 auto;
+	}
+}
+.other-projects__project__einstein {
+	img {
+		max-width: 60%;
+	}
+}
+.developers__item {
+	@include calcF(12,30);
+	display: inline-block;
+	text-align: center;
+	letter-spacing: 0.2em;
+	font-family: 'OksanaSans';
+	span {
+		text-transform: uppercase;
+		display: block;
+	}
+}
+.partner__list {
+	text-align: center;
+	margin-top: 45px;
+}
+
+@media screen and (max-width: $tabletWidth) {
+	.developers {
+		padding-top: 50px;
+	}
+	.developers-wrapper {
+		background-position: 30% center;
+	}
+	
+}
+
+@media screen and (max-width: $smallWidth) {
+	.developers__item {
+		display: block;
+		margin-bottom: 15px;
+		span {
+			color: #fff;
+		}
+	}
+	 .developers-wrapper {
+		background-position: 26% 30%;
+	}
+	.other-projects__project {
+		img {
+			max-width: 50%;
+			margin: 0 auto;
+		}
+	}
+	
+	/* .developers {
+		background: rgba(0,0,0,0.2);
+	} */
+}

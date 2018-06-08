@@ -1,0 +1,248 @@
+.zag__container {
+	background: url('../img/KAN_VIEW_1_SUNRISE_FINAL.jpg') center center no-repeat;
+	background-size: cover;
+	min-height: 100%;
+	width: 100%;
+	/* .zag__form_wrapper {
+		display: none;
+		opacity: 1;
+	} */
+}
+
+.zag__form_wrapper {
+
+}
+
+.mfp-bg {
+	background: #d7d7d7;
+	/* filter: blur(8px);
+	background: url('../img/KAN_VIEW_1_SUNRISE_FINAL.jpg') center center no-repeat;
+	 */background-size: cover;
+}
+
+.zag__inner {
+	text-align: center;
+	letter-spacing: 0.025em;
+	padding-bottom: 100px;
+	overflow: hidden;
+}
+
+.zag__main-logo {
+	padding-top: 100px;
+	img {
+		display: inline-block;
+	}
+}
+
+.mail-ico {
+	background: url('../img/mail-ico.png');
+	width: 13px;
+	height: 10px;
+}
+
+.phone-ico {
+	background: url('../img/phone-ico.png');
+	width: 13px;
+	height: 13px;
+}
+
+.zag__contacts {
+	margin-top: 40px;
+	display: inline-block;
+}
+
+.zag__contacts_item {
+	font-family: 'OksanaSansDemiBold';
+	color: #4b4b4b;
+	margin-right: 15px;
+	font-size: 14px;
+	i {
+		margin-right: 15px;
+	}
+}
+.zag__contacts_mail {
+	margin-top: 25px;
+}
+
+.zag__form {
+	text-align: center;
+	position: relative;
+	/* bottom: 110%; */
+	opacity: 0;
+	width: 100%;
+	margin: 0 auto;
+	padding: 35px 35px 20px 35px;
+	background: #fdfdfc;
+	transition: 1s all;
+	input {
+		position: relative;
+		letter-spacing: 0.025em;
+		outline: none;
+		transition: all 1s;
+		opacity: 0;
+		&.vissible {
+			opacity: 1;
+		}
+	}
+	input[type="text"], input[type="tel"],input[type="email"] {
+		display: block;
+		text-align: center;
+		width: 100%;
+		border: 1px solid $borderGrey;
+		background: transparent;
+		height: 50px;
+		margin-bottom: 15px;
+		color: #000;
+		font-size: 16px;
+		font-family: 'OksanaSansItalic';
+	}
+	
+
+	input[type="submit"] {
+		margin-top: 15px;
+		border: none;
+		font-size: 14px;
+		background: transparent;
+		cursor: pointer;
+		color: $colorBlue;
+		font-family: 'OksanaSans';
+	}
+	::-webkit-input-placeholder{
+		    color: #000;
+		    opacity: 1;
+		}
+	:-moz-placeholder{
+	    color: #000;
+	    opacity: 1;
+	}
+	::-moz-placeholder{
+	    color: #000;
+	    opacity: 1;
+	}
+	:-ms-input-placeholder{
+	   	color: #000;
+	    opacity: 1;
+	}
+	&.vissible {
+		opacity: 1;
+	}
+}
+	
+.form__title {
+	font-family: 'AlergiaWideExtraLight';
+	color: $colorBlue;
+	font-size: 30px;
+	padding-bottom: 30px;
+	.orange-text {
+		color: #b17c57;
+		font-family: 'AlergiaWideRegular';
+	}
+}
+.zag__form_wrapper {
+	padding: 4px;
+	//border: 1px solid #e6e6e6;
+	max-width: 310px;
+	position: relative;
+	vertical-align: middle;
+	margin: 0 auto;
+	transition: all 1s;
+	transform: scale(1.1);
+	//display: block !important;
+	
+	z-index: 1000;
+	&::before, &::after {
+		content: "";
+		transition: all 2s;
+		position: absolute;
+		width: 0;
+		height: 0;
+		border: 1px solid $colorBlue;
+		z-index: -1;
+	}
+	&::before {
+		left: -1px;
+		top: -1px;
+		border-right: none;
+		border-bottom: none;
+	}
+	&::after{
+		right: -1px;
+		bottom: -1px;
+		border-left: none;
+		border-top: none;
+	}
+	&.active {
+		transform: scale(1);
+		&::before, &::after {
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+
+
+
+.zag__callback_btn {
+	position: relative;
+	max-width: 350px;
+	border: 1px solid #b2b2b2;
+	margin: 160px auto 0;
+	i {
+		margin-left: 15px;
+	}
+}
+
+.zag__callback_link {
+	text-decoration: none;
+	color: $colorBlue;
+	letter-spacing: 0.2em;
+	font-size: 14px;
+	width: 100%;
+	height: 100%;
+	padding: 20px 0;
+	display: block;
+	outline: none;
+}
+
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
+}
+
+//content at start
+.mfp-fade.mfp-wrap .mfp-content {
+	opacity: 0;
+	transition: all 0.6s ease-out;
+
+}
+//content animate it
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
+  transform: translateX(0);
+}
+//content animate out
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+  transform: translateY(-100px);
+}
+
+@media screen and (max-width: 370px) {
+
+	.bordered__form {
+		&::before, &::after {
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,53 @@
+
+@mixin clearfix {
+	&:before,
+	&:after {
+		content: "";
+		display: table;
+	}
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin overlay($bg-color) {
+	&:before {
+		content: "";
+		position: absolute;
+		background: $bg-color;
+		height: 100%;
+		width: 100%;
+		top: 0;
+		left: 0;
+		opacity: 0;
+		transition: opacity 0.3s;
+	}
+	&:hover {
+		&:before {
+			opacity: 0.5;
+		}
+	}
+
+}
+
+@mixin calcFZ($val){
+	font-size: $val / $font-size + em;
+}
+
+@mixin calcLH($lh, $fz) {
+	line-height: $lh / $fz;
+}
+
+@mixin calcF($fz, $lh){
+	font-size: $fz / $font-size + em;
+	line-height: $lh / $fz;
+}
+@mixin calcWidth($width){
+	width: ($width) / $mainWidth * 100%;
+}
+@mixin calcWidth($width){
+	width: ($width) / $mainWidth * 100%;
+}
+
+
+

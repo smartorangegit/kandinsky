@@ -1,0 +1,41 @@
+.not_found{
+   display:none;
+   text-align: center;
+   font-size: .875em;
+   line-height: 2.57143;
+   letter-spacing: .2em;
+   color: #4d4d4d;
+   padding: 20px;
+}
+.footer .zag__form_wrapper,.apartments .zag__form_wrapper{
+    display:none;
+    
+}
+
+.st0:hover, .st1:hover ,.st-on  {
+    fill: #2a5c6c;
+ cursor: pointer;
+ opacity: 1;
+}  
+
+.apartments__param_item {
+  float: left;
+ text-align: center;
+ width: 16.66666666%;
+ padding: 15px 15px;
+ min-height: 90px;
+}
+
+.apartments__floor_min-plan svg {
+   width: 100%;  
+   max-height: 100%;
+}
+.loading-bar{
+    line-height: 1;
+   color: #fff;
+   text-align: center;
+   letter-spacing: .2em;
+   font-family: AlergiaWideLight;
+   margin: 20px 0px 0px 0px;
+    font-size: 0.9em;
+}

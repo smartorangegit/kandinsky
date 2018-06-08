@@ -1,0 +1,147 @@
+.page-404__wrapper {
+	display: block;
+	height: 100%;
+	.menu-title, .header__lang {
+		color: #fff;
+	}
+	.menu__line {
+		background: #fff;
+	}
+	.lang__text {
+		&::before {
+			background: url('../img/arrow-down-white.png') 0 0 no-repeat;
+		}
+	}
+	.footer {
+		background: none;
+		color: #fff;
+	}
+	.smarto-developer__link{
+		color: #fff;	
+	}
+	.smart-orange {
+		background: url('../img/footer/smart-logo-white.png') 0 0 no-repeat;
+	}
+	
+}
+
+.page-404__content {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	background: url('../img/404/404-bg.jpg') center center no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.page-404__nav {
+
+}
+
+.page-404__inner {
+	max-width: $mainWidth;
+	width: 100%;
+	padding: 120px 10px 50px;
+	margin: 0 auto;
+	flex: 1 0 auto;
+}
+.page-404__btns {
+	float: right;
+	margin-right: 8%;
+}
+
+.page-404__btns_item {
+	display: inline-block;
+	margin-left: 90px;
+	i {
+		margin-right: 15px;
+	}
+}
+.page-404__btns_link {
+	text-decoration: none;
+	color: $colorBlue;
+	@include calcF(14,14);
+	font-family: 'OksanaSansDemiBold';
+	letter-spacing: 0.2em;
+}
+
+.page-404__title {
+	@include calcF(110,110);
+	text-align: center;
+	color: #fff;
+	font-family: 'OksanaSansBold';
+	margin-top: 90px;
+}
+
+.page-404__text {
+	margin: 100px auto 0;
+	width: 80%;
+	color: #fff;
+	@include calcF(14,30);
+	text-align: center;
+	display: none;
+}
+
+.wave-line {
+	background: url('../img/curve-line-white.png') repeat;
+	width: 20%;
+	height: 14px;
+	position: absolute;
+	bottom: 60%;
+	right: 0;
+}
+
+@media screen and (max-width: $mainWidth) {
+	.page-404__text {
+		display: block;
+	}
+	.wave-line {
+		position: static;
+		margin: 160px auto 0;
+		width: 50%;
+	}
+	.page-404__title {
+		@include calcF(70,70);
+		margin-top: 60px;	
+	}
+	.page-404__text {
+		margin-top: 60px;
+	}
+
+}
+
+@media screen and (max-width: $mobileWidth) {
+	.page-404__inner {
+		text-align: center;
+	}
+	.page-404__btns {
+		float: none;
+		display: inline-block;
+		margin: 40px auto 0;
+	}
+	.page-404__btns_item {
+		margin-left: 30px;
+	}
+	.wave-line {
+		margin-top: 40px;
+	}
+}
+
+@media screen and (max-width: $smallWidth) {
+	.page-404__btns_item {
+		margin-left: 0;
+		display: block;
+	}
+	.page-404__btns {
+		display: block;
+	}
+	.page-404__btns_item {
+		margin-left: 0;
+		margin-top: 20px;
+	}
+	.page-404__title {
+		@include calcF(40,40);
+		margin-top: 30px;
+	}
+}
+

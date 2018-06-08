@@ -1,0 +1,89 @@
+.webcam-wrapper {
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	// background: url('../img/webcam/webcam-bg.jpg') center center no-repeat;
+	background: #f4ede7;
+	background-size: cover;
+	.webcam-video__description {
+		color: $colorBlue;
+	}
+	.webcam__contruction_link {
+		color: $colorBlue;
+	}
+	.post__title {
+		color: $colorBlue;
+		&:before {
+			background: $colorBlue;
+		}
+	}
+}
+
+.webcam-video__list {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+
+.webcam-video {
+	width: 49%;
+	margin: 15px auto 1%;
+	border: 1px solid $colorBlue;
+	padding: 5px;
+}
+
+.webcam-video__inner {
+	width: 100%;
+	padding-bottom: 55.5%;
+	position: relative;
+	font-family: 'OksanaSansDemiBold';
+	
+}
+
+.web-cam__online {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	iframe {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.webcam-video__description {
+	text-align: center;
+	margin-top: 15px;
+	@include calcF(18,24);
+}
+
+.webcam__contruction_btn {
+	text-align: center;
+	@include calcF(14,24);
+	margin-top: 35px;
+	i {
+		margin-left: 15px;
+	}
+}
+.webcam__contruction_link {
+	text-decoration: none;
+	color: #fff;
+	letter-spacing: 0.2em;
+}
+
+@media screen and (max-width: $tabletWidth) {
+	.post__inner {
+		text-align: center;
+	}
+	.webcam-video {
+		margin-top: 25px;
+		width: 100%;
+	}
+	.webcam-video__list {
+		display: block;
+	}
+	.webcam-video__description {
+		margin-top: 25px;
+	}
+}

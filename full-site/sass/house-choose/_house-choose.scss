@@ -1,0 +1,308 @@
+.house-choose {
+	flex: 1 0 auto;
+	width: 100%;
+	height: 100%;
+	.zag__form_wrapper {
+		display: none;
+	}
+}
+
+.house-choose--svg {
+	width: 100%;
+	height: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+#house-choose-svg {
+	//height: 100%;
+	
+	
+	
+	image {
+		min-height: 100%;
+		min-width: 100%;
+		width: 100%;
+		height: auto;
+		
+	}
+}
+
+.houses__part--container {
+	&:hover {
+		.house-info__popup {
+			visibility: visible;
+			opacity: 1;
+		}
+	}
+}
+
+.houses--svg-part{
+	transition: all 1s;
+	opacity:0.1;
+	fill:#234C5A;
+	cursor: pointer;
+	&:hover {
+		opacity: 0.7;
+		animation: none !important;
+		.house-info__popup {
+			visibility: visible;
+		}
+	}
+	&:nth-child(4) {
+		animation: mymove 3s infinite ease alternate;	
+	}
+}
+
+	//@for $i from 1 through 4 {
+	//	.houses--svg-part:nth-child(#{$i}) {
+	//		animation-delay: #{$i*3}s;
+	//	}
+	//}
+@keyframes mymove {
+    from {
+    	opacity: 0.1;
+    }
+    to {
+    	opacity: 0.7;
+    }
+}
+.st1{fill:#7C624B;}
+.st2{fill:#234C5A;}
+.st3{fill:#FFFFFF;}
+.st4{font-family:'OksanaSans-Bold';}
+.st5{font-size:10px;}
+
+.house-choose--inner {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	.apartments-compass {
+		vertical-align: middle;
+	}
+}
+
+.house-choose__parametrs {
+
+}
+.house-choose__info_item {
+	.compass-north {
+		right: 100%;
+		top: 40%;
+	}
+	.compass-south {
+		left: 100%;
+		top: 32%;
+	}
+}
+
+.house-choose__prize--btn {
+	border: 1px solid #fff;
+    display: inline-block;
+    padding: 10px 25px;
+    text-decoration: none;
+    vertical-align: middle;
+    letter-spacing: 0.2em;
+    margin-left: 50px;
+    color: #234c5a;
+    i {
+    	margin-left: 10px;
+    }
+
+}
+
+.house-choose__info {
+	position: absolute;
+	right: 100px;
+	top: 100px;
+	@include clearfix;
+	.apartments__calc_btn {
+		text-align: center;
+		span {
+			text-align: left;
+		}
+	}
+}
+
+.rooms-number {
+	@include clearfix;
+	float: right;
+	margin-top: 25px;
+}
+
+.rooms-number__item {
+	padding-top: 5px;
+}
+
+.house-choose__info_item {
+	@include clearfix;
+}
+
+.rooms-number__link {
+	text-decoration: none;
+	@include calcF(12,20);
+	letter-spacing: 0.1em;
+	color: $colorBlue;
+	.orange-text {
+		font-family: 'OksanaSansBold';
+	}
+	font-family: 'OksanaSansDemiBold';
+}
+
+.svg__width--decorator {
+	width: 100%;
+	opacity: 1;
+}
+
+.svg__height--decorator {
+	height: 100%;
+	opacity: 1;
+}
+
+.house-choose--hint {
+	text-align: center;
+	margin-top: 60px;
+	letter-spacing: 0.2em;
+}
+.swipe-hint {
+	position: absolute;
+	width: 100%;
+	bottom: 10%;
+	left: 0;
+	text-align: center;
+	font-size: 40px;
+	font-family: 'OksanaSansBold';
+	color: #fff;
+	display: none;
+}
+
+.swipe__elem {
+	opacity: 1;
+	&.active {
+		animation: fadeIn 0.5s 1 ease alternate;
+		animation-fill-mode: forwards;
+	}
+}
+.house-info__popup {
+	visibility: hidden;
+	opacity: 0;
+	transition: all 1s;
+}
+
+.swipe-hint--img {
+	//visibility: none;
+	width: 50px;
+	height: auto;
+	animation: fadeIn 2s infinite ease ;
+}
+
+@keyframes fadeIn {
+    from {
+    	
+    	transform: translateX(100px);
+    }
+    to {
+    	opacity: 0;
+    	transform: translateX(-100px);
+    }
+}
+@media screen and (max-width: $mainWidth) {
+	.house-choose--inner {
+		.apartments__title {
+			display: none;
+		}
+		.apartments-compass {
+			display: none;
+		}
+		.house-choose__prize--btn {
+			margin-left: 0;
+		}
+	}
+	.house-choose--hint {
+		font-size: 20px;
+	}
+	.house-choose__info {
+		position: static;
+		text-align: center;
+		/* display: flex;
+		flex-direction: row;
+		justify-content: space-between; */
+		margin-top: 15px;
+	}
+	.rooms-number {
+		margin-top: 0;
+		display: inline-block;
+		float: none;
+		/* display: flex;
+		justify-content: space-between;
+		align-items: center; */
+	}
+
+	.rooms-number__calc {
+		margin-left: 20px;
+		.apartments__calc_btn{
+			margin-top: 0;
+		}
+	}
+
+	.house-choose__info_item {
+		margin-right: 20px;
+		display: inline-block;
+		text-align: left;
+	}
+
+	.rooms-number__item {
+		padding: 0 20px;
+		display: none;
+		text-align: left;
+
+	}
+}
+
+@media screen and (max-width: $tabletWidth) {
+	.house-choose{
+		.apartments__title {
+			padding-top: 75px;
+		}
+	}
+	.swipe-hint {
+		display: block;
+		//visibility: visible;
+	}
+}
+@media screen and (max-width: $mobileWidth) {
+	.house-choose--hint {
+		margin-top: 80px;
+	}
+	.house-choose__prize--btn {
+		background: rgba(255,255,255,0.8);
+	}
+}
+
+@media screen and (max-width: $mediumMobWidth) {
+	.house-choose__info {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 0;
+	}
+	.house-choose__info_item {
+		margin-top: 15px;
+		margin-right: 0;
+	}
+	.house-choose__info_item:nth-child(1) {
+		order: 10;
+	}
+	.house-choose__info_item:nth-child(2){
+		order: 5;
+	}
+	.rooms-number__calc {
+		background: rgba(255,255,255,0.8);
+		padding: 5px 10px;
+		margin-left: 0;
+		.apartments__calc_btn {
+			width: auto;
+		}
+	}
+}

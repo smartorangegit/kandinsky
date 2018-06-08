@@ -1,0 +1,352 @@
+.mail-ico, .phone-ico, .map-ico{
+	background: url(../img/header-ico/sprites.png) no-repeat;
+}
+
+.tree-yellow-silhouette-shape {
+	background: url(../img/location/tree-yellow-silhouette-shape.png) no-repeat;
+	width: 16px;
+	height: 16px;
+}
+
+.mail-ico{
+	background-position: 0 0;
+	width: 13px;
+	height: 10px;
+}
+
+.phone-ico{
+	background-position: -21px 0;
+	width: 13px;
+	height: 13px;
+}
+
+.map-ico{
+	background-position: -41px 0;
+	width: 13px;
+	height: 16px;
+}
+
+.arrow-right-black {
+	background: url(../img/arrow-right-black.png) 0 0 no-repeat;
+	width: 45px;
+	height: 6px;
+}
+
+.arrow-right-long-blue {
+	background: url(../img/arrow-right-long-blue.png) 0 0 no-repeat;
+	width: 45px;
+	height: 6px;
+}
+
+.brown-line {
+	width: 120px;
+	height: 2px;
+	display: inline-block;
+	vertical-align: middle;
+	background: #b17c57;
+}
+
+.curve-line {
+	background: #fff url(../img/main/double-curve-line.png) center center no-repeat;
+	width: 220px;
+	height: 18px;
+	margin: 0 auto;
+	display: block;
+	z-index: 1;
+	//transform: translateY(50px);
+	 &::before {
+		content: "";
+		transition: all 3s ease-in-out;
+		position: absolute;
+		width: 0;
+		left: 0;
+		right: 0;
+		margin: auto;
+		top: 50%;
+		height: 1px;
+		background: #e6e6e6;
+		z-index: -1;
+	}
+	&.animate {
+		&::before {
+			width: 100%;
+		}
+	}
+}
+
+.quote-end {
+	width: 32px;
+	height: 20px;
+	background: url('../img/main/quote-end-ico.png') 0 0 no-repeat;
+}
+
+.arrow-gray-right {
+	background: url('../img/arrow-gray-right.png') 0 0 no-repeat;
+	width: 45px;
+	height: 6px;
+}
+.arrow-gray-left {
+	background: url('../img/arrow-gray-left.png') 0 0 no-repeat;
+	width: 45px;
+	height: 6px;
+}
+.smart-orange {
+	background: url('../img/footer/smart-logo.png') 0 0 no-repeat;
+	width: 48px;
+	height: 24px;
+}
+.arrow-long-left-black {
+	background: url('../img/arrow-left-long-black.png') 0 0 no-repeat;
+	width: 45px;
+	height: 6px;
+}
+
+.arrow-right-white {
+	background: url('../img/arrow-right-white.png') 0 0 no-repeat;
+	width: 45px;
+	height: 6px;
+}
+
+.pict-circle {
+	height: 80px;
+	width: 80px;
+	border: 2px solid #e5e5e5;
+	border-radius: 50%;
+}
+.curve-vertical {
+	background: url('../img/infostruction/curve-up-ico.png') 0 0 no-repeat;
+	width: 14px;
+	height: 320px;
+}
+.angle-line {
+	width: 50px;
+	height: 2px;
+	background: #e5e5e5;
+	margin-bottom: 25px;
+}
+.curve-horizontal-grey {
+	background: url('../img/infostruction/curve-horizontal-grey.png') 0 0 no-repeat;
+	width: 240px;
+	height: 14px;
+}
+.zig-zag  {
+	background: url('../img/infostruction/zig-zag-ico.png') 0 0 no-repeat;
+	width: 154px;
+	height: 109px;
+}
+
+.aptec-mini-ico, .bank-mini-ico, .kinder-garden-mini-ico, .dantist-mini-ico, .gym-mini-ico, .highschool-mini-ico, .market-mini-ico, .school-mini-ico, .shop-mini-ico, .suvenire-mini-ico, .restaurant-mini-ico{
+	background: url('../img/location/sprites-mini-ico.png') no-repeat;
+}
+
+.aptec-mini-ico{
+	background-position: 0 0;
+	width: 15px;
+	height: 14px;
+}
+
+.bank-mini-ico{
+	background-position: -49px 0;
+	width: 11px;
+	height: 19px;
+}
+
+.kinder-garden-mini-ico{
+	background-position: -23px 0;
+	width: 15px;
+	height: 17px;
+}
+
+.dantist-mini-ico{
+	background-position: -96px -3px ;
+	width: 14px;
+	height: 13px;
+}
+
+.gym-mini-ico{
+	background-position: -66px -3px ;
+	width: 23px;
+	height: 10px;
+}
+
+.highschool-mini-ico{
+	background-position: -143px 0;
+	width: 15px;
+	height: 18px;
+}
+
+.market-mini-ico{
+	background-position: -117px 0;
+	width: 17px;
+	height: 14px;
+}
+
+.school-mini-ico{
+	background-position: -244px 0;
+	width: 13px;
+	height: 21px;
+}
+
+.shop-mini-ico{
+	background-position: -221px 0;
+	width: 12px;
+	height: 15px;
+}
+
+.suvenire-mini-ico{
+	background-position: -197px 0;
+	width: 14px;
+	height: 15px;
+}
+
+.restaurant-mini-ico{
+	background-position: -166px 0;
+	width: 19px;
+	height: 18px;
+}
+
+.calendar-ico, .clock-ico{
+	background: url('../img/construction/construction-sprites.png') no-repeat;
+}
+
+.calendar-ico{
+	background-position: 0 0;
+	width: 15px;
+	height: 15px;
+}
+
+.clock-ico{
+	background-position: -28px 0;
+	width: 15px;
+	height: 15px;
+}
+
+.shape-4 {
+	background: url('../img/advantages/shape-4.png') 0 0 no-repeat;
+	width: 100px;
+	height: 192px;
+
+}
+
+.shape-6 {
+	background: url('../img/advantages/shape-6.png') 0 0 no-repeat;
+	width: 260px;
+	height: 75px;
+}
+.shape-8 {
+	background: url('../img/advantages/shape-9.png') 0 0 no-repeat;
+	width: 28px;
+	height: 336px;
+}
+.shape-10 {
+	background: url('../img/advantages/shape-10.png') 0 0 no-repeat;
+	width: 152px;
+	height: 76px;
+}
+.shape-triangle-10 {
+	background: url('../img/advantages/shape-triangle-10.png') 0 0 no-repeat;
+	width: 159px;
+	height: 139px;
+}
+
+.decorate-number {
+	background: url('../img/advantages/circle-number.png') 0 0 no-repeat;
+	width: 60px;
+	height: 60px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.curve-blue-line {
+	background: url('../img/apartments/curve-blue-line.png') 0 0 no-repeat;
+	width: 336px;
+	height: 14px;
+}
+
+.arrow-left-brown, .arrow-left-long-grey, .arrow-left-thin, .arrow-right-brown, .arrow-right-thin, .calc-ico, .compass-ico, .key-ico, .arrow-down-brown{
+	background: url('../img/apartments/apartments-sprites.png') no-repeat;
+}
+
+.arrow-left-brown{
+	background-position: -198px -18px ;
+	width: 48px;
+	height: 6px;
+}
+
+.arrow-left-long-grey{
+	background-position: -174px 0;
+	width: 122px;
+	height: 6px;
+}
+
+.arrow-left-thin{
+	background-position: -114px 0;
+	width: 7px;
+	height: 13px;
+}
+
+.arrow-right-brown{
+	background-position: -150px 0;
+	width: 10px;
+	height: 6px;
+}
+
+.arrow-right-thin{
+	background-position: -102px 0;
+	width: 7px;
+	height: 13px;
+}
+
+.calc-ico{
+	background-position: -46px 0;
+	width: 29px;
+	height: 30px;
+}
+
+.compass-ico{
+	background-position: 0 0;
+	width: 40px;
+	height: 43px;
+}
+
+.key-ico{
+	background-position: -83px -3px ;
+	width: 16px;
+	height: 16px;
+}
+
+.arrow-down-brown{
+	background-position: -131px 0;
+	width: 6px;
+	height: 10px;
+}
+
+.circle {
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.pink-circle {
+	background: #f4ede7;
+}
+.brown-circle {
+	background: #b17c57;
+}
+.blue-circle {
+	background: #234c5a;
+}
+.fiol-circle {
+	background: #926da2;
+}
+
+
+
+
+
+
+
+
+

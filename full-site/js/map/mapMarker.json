@@ -1,0 +1,652 @@
+[
+  {
+    "type": "gym",
+    "title_ru": "Спортивный комплекс, ОНПУ",
+    "description_ru": "Шампанский переулок, 11",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.751578,46.450235"
+  },
+  {
+    "type": "gym",
+    "title_ru": "УТОГ Спортивный комплекс",
+    "description_ru": "Сегедская, 5Б",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.744589,46.450893"
+  },
+  {
+    "type": "gym",
+    "title_ru": "Технолог Спортивный комплекс, ОНАПТ",
+    "description_ru": "Канатная, 124",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.743691,46.457214"
+  },
+  {
+    "type": "gym",
+    "title_ru": "Pride and glory\" Сеть спортивных клубов",
+    "description_ru": "Семинарская, 11а",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.743439,46.461466"
+  },
+  {
+    "type": "highschool",
+    "title_ru": "Одесский национальный университет им. И.И. Мечникова",
+    "description_ru": "Французский бульвар, 24/26",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.759294,46.455159"
+  },
+  {
+    "type": "highschool",
+    "title_ru": "Одесский национальный политехнический университет",
+    "description_ru": "Шевченко проспект, 1",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.750769,46.460982"
+  },
+  {
+    "type": "highschool",
+    "title_ru": "Нац. университет Одесская юридическая академия",
+    "description_ru": "Фонтанская дорога, 23",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.744517,46.441349"
+  },
+  {
+    "type": "highschool",
+    "title_ru": "Одесский региональный институт госуправления",
+    "description_ru": "Генуэзская, 22",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.756088,46.438337"
+  },
+  {
+    "type": "highschool",
+    "title_ru": "Южноукраинский нац. педуниверситет им. К.Д. Ушинского",
+    "description_ru": "Фонтанская дорога, 4",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.738714,46.448347"
+  },
+  {
+    "type": "highschool",
+    "title_ru": "Одесский государственный экологический университет",
+    "description_ru": "Львовская, 15",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.741461,46.400055"
+  },
+  {
+    "type": "highschool",
+    "title_ru": "Одесский государственный аграрный университет",
+    "description_ru": "Канатная, 99",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.746062,46.46182"
+  },
+  {
+    "type": "kinderGarden",
+    "title_ru": "Детский сад-ясли №248",
+    "description_ru": "Французский бульвар, 69",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.763705,46.448198"
+  },
+  {
+    "type": "kinderGarden",
+    "title_ru": "Детский сад-ясли №137",
+    "description_ru": "Французский бульвар, 46",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.762996,46.447044"
+  },
+  {
+    "type": "kinderGarden",
+    "title_ru": "Почемучки\" Частный детский сад",
+    "description_ru": "Шевченко проспект, 27а/1",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.756222,46.450341"
+  },
+  {
+    "type": "kinderGarden",
+    "title_ru": "Пуговки\" Центр гармоничного развития ребенка",
+    "description_ru": "Шевченко проспект, 12/2",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.753581,46.449484"
+  },
+  {
+    "type": "kinderGarden",
+    "title_ru": "Элит-М\" Сеть частных детских садов",
+    "description_ru": "Французский бульвар, 17 к5",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.75713,46.464228"
+  },
+  {
+    "type": "kinderGarden",
+    "title_ru": "Детский сад-ясли №162",
+    "description_ru": "Французский бульвар, 12/4",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.754273,46.460597"
+  },
+  {
+    "type": "kinderGarden",
+    "title_ru": "Джерельце\" Детский сад №5",
+    "description_ru": "Гагарина проспект, 10а",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.751587,46.458201"
+  },
+  {
+    "type": "kinderGarden",
+    "title_ru": "Дошкольное учебное заведение №154",
+    "description_ru": "Сегедская, 9а",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.744203,46.449633"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Поляна сказок, детское кафе",
+    "description_ru": "Французский бульвар, 22",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.758881,46.456295"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "True Man Hot Boat, арт-клуб",
+    "description_ru": "Дельфин пляж, 3/2",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.768127,46.454921"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Глечик 1968, семейный ресторан",
+    "description_ru": "Дельфин пляж, 2",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.766260,46.454115"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Дача, ресторан",
+    "description_ru": "Французский бульвар, 85/3",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.766059,46.44279"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Блеф, ресторан",
+    "description_ru": "Французский бульвар, 85/6",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.766921,46.447056"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Park Residence, караоке-ресторан",
+    "description_ru": "Французский бульвар, 85 к1",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.76649,46.445572"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Caleton, ресторанно-пляжный комплекс",
+    "description_ru": "Дельфин пляж, 4а",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.769216,46.451277"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Luckas Beach, ресторанно-пляжный комплекс",
+    "description_ru": "Французский бульвар, 85/1",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.76649,46.445572"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Горец, ресторан",
+    "description_ru": "Французский бульвар, 54/1",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.765789,46.441896"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Azuma, ресторан паназиатской кухни",
+    "description_ru": "Французский бульвар, 54/23",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.766238,46.441442"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Solo, ресторан",
+    "description_ru": "Академическая, 11а",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.757489,46.440722"
+  },
+  {
+    "type": "restaurant",
+    "title_ru": "Сады Победы, ресторан",
+    "description_ru": "Академическая, 28",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.758028,46.439691"
+  },
+  {
+    "type": "school",
+    "title_ru": "Одесская общеобразовательная школа №62 I-III ступеней",
+    "description_ru": "Шевченко проспект, 10",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.751614,46.451663"
+  },
+  {
+    "type": "school",
+    "title_ru": "Одесская специализированная школа №35 I-III ступеней",
+    "description_ru": "Гагарина проспект, 3",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.755369,46.458312"
+  },
+  {
+    "type": "school",
+    "title_ru": "Приморский Лицей",
+    "description_ru": "Гагарина проспект, 14",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.741723,46.454097"
+  },
+  {
+    "type": "school",
+    "title_ru": "Одесская общеобразовательная школа №56 I-III ступеней",
+    "description_ru": "Тенистая, 1",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.755333,46.439387"
+  },
+  {
+    "type": "school",
+    "title_ru": "Ecole Francaise Privee\" Французская частная школа",
+    "description_ru": "Гагаринское Плато, 5/1",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.763633,46.431667"
+  },
+  {
+    "type": "school",
+    "title_ru": "Одесская общеобразовательная школа №38 I-III ступеней",
+    "description_ru": "Фонтанская дорога, 37",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.747949,46.436132"
+  },
+  {
+    "type": "school",
+    "title_ru": "Военно-морской лицей",
+    "description_ru": "Фонтанская дорога, 14",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.749431,46.429549"
+  },
+  {
+    "type": "dantist",
+    "title_ru": "Beauty Smile",
+    "description_ru": "Французский бульвар, 22 к5",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.757615,46.454451"
+  },
+  {
+    "type": "dantist",
+    "title_ru": "Gradia",
+    "description_ru": "Шевченко проспект, 8а",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.753132,46.45306"
+  },
+  {
+    "type": "dantist",
+    "title_ru": "Стоматологическая клиника",
+    "description_ru": "Шевченко проспект, 12/1",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.754767,46.449906"
+  },
+  {
+    "type": "dantist",
+    "title_ru": "Эстетика",
+    "description_ru": "Семинарская, 1/1",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.754021,46.46123"
+  },
+  {
+    "type": "dantist",
+    "title_ru": "Градиа Элит",
+    "description_ru": "Шевченко проспект, 4Б",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.748398,46.459883"
+  },
+  {
+    "type": "aptec",
+    "title_ru": "Витэкс",
+    "description_ru": "Французский бульвар, 49/51 к3",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.761486,46.453681"
+  },
+  {
+    "type": "aptec",
+    "title_ru": "Медикотека",
+    "description_ru": "Французский бульвар, 49/51 к1",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.761486,46.453681"
+  },
+  {
+    "type": "aptec",
+    "title_ru": "Реал-Фарм",
+    "description_ru": "Французский бульвар, 22 к5",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.757615,46.454451"
+  },
+  {
+    "type": "shop",
+    "title_ru": "Сільпо",
+    "description_ru": "Французский бульвар, 16",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.757103,46.457996"
+  },
+  {
+    "type": "shop",
+    "title_ru": "Сільпо",
+    "description_ru": "Довженко, 4",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.7566,46.456543"
+  },
+  {
+    "type": "shop",
+    "title_ru": "Таврия В",
+    "description_ru": "Шевченко проспект, 15/3",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.753716,46.454066"
+  },
+  {
+    "type": "shop",
+    "title_ru": "Обжора",
+    "description_ru": "Шевченко проспект, 19",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.754066,46.452768"
+  },
+  {
+    "type": "shop",
+    "title_ru": "Космос (деликатес-маркет)",
+    "description_ru": "Академическая, 28",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.758028,46.439691"
+  },
+  {
+    "type": "market",
+    "title_ru": "Сады победы",
+    "description_ru": "Академическая, 28",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.758028,46.439691"
+  },
+  {
+    "type": "market",
+    "title_ru": "Gagarinn Plaza",
+    "description_ru": "Генуэзская, 5/2",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.760552,46.434313"
+  },
+  {
+    "type": "market",
+    "title_ru": "5 элемент",
+    "description_ru": "Черняховского, 4",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.747212,46.438517"
+  },
+  {
+    "type": "bank",
+    "title_ru": "Ощадбанк",
+    "description_ru": "Французский бульвар, 49/51",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.761486,46.453681"
+  },
+  {
+    "type": "bank",
+    "title_ru": "АБ Південний",
+    "description_ru": "Французский бульвар, 24/26",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.759294,46.455159"
+  },
+  {
+    "type": "bank",
+    "title_ru": "КБ ПриватБанк",
+    "description_ru": "Французский бульвар, 12/2",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.755773,46.45974"
+  },
+  {
+    "type": "bank",
+    "title_ru": "Альфа-Банк",
+    "description_ru": "Шевченко проспект, 15",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.752791,46.454699"
+  },
+  {
+    "type": "bank",
+    "title_ru": "Первый Украинский Международный Банк",
+    "description_ru": "Шевченко проспект, 8а",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.753132,46.45306"
+  },
+  {
+    "type": "bank",
+    "title_ru": "КБ ПриватБанк",
+    "description_ru": "Шевченко проспект, 27",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.756034,46.449993"
+  },
+  {
+    "type": "suvenire",
+    "title_ru": "Практичные подарки",
+    "description_ru": "Семафорный переулок, 4 к5",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.741688,46.459914"
+  },
+  {
+    "type": "suvenire",
+    "title_ru": "Сладкоежка",
+    "description_ru": "Черняховского, 12/3",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.749925,46.439337"
+  },
+  {
+    "type": "park",
+    "title_ru": "Дендропарк \"Победа",
+    "description_ru": "Проспект Шевченка, 14",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.754704,46.450514"
+  },
+  {
+    "type": "park",
+    "title_ru": "Ботанический сад",
+    "description_ru": "Фр.Бульвар, 46",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": " 30.763003,46.447001"
+  },
+  {
+    "type": "park",
+    "title_ru": "Парк института им. академика В.П. Филатова",
+    "description_ru": "Фр.Бульвар, 43",
+    "title_ua": "",
+    "description_ua": "",
+    "title_en": "",
+    "description_en": "",
+    "coords": "30.760403,46.455789"
+  }
+]

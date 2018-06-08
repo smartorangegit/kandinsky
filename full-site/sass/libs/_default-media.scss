@@ -1,0 +1,18 @@
+@media screen and (max-width: $tabletWidth) {
+	.grad__title_logo {
+		margin-top: 25px;
+	}
+}
+@media screen and (max-width: $mobileWidth) {
+	.view-more {
+		display: none;
+	}
+	.grad__title_text {
+		@include calcF(72,72);
+	}
+	.grad__title_body {
+		margin-bottom: 45px;
+		padding: 0 10px;
+	}
+	
+}

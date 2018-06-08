@@ -1,0 +1,72 @@
+@import "libs/_reset";
+@import "libs/mixins";
+@import "libs/owl.carousel.min";
+@import "libs/variables";
+@import "libs/ion.rangeSlider";
+@import "libs/ion.rangeSlider.skinNice";
+@import "libs/animate";
+@import "libs/intlTelInput";
+@import "inc/header";
+@import "inc/footer";
+@import "inc/menu-open";
+@import "libs/fonts";
+@import "libs/icons";
+@import "libs/default";
+@import "libs/magnific-popup";
+@import "zag/zag";
+@import "main-page/main";
+@import "main-page/about-kand";
+@import "main-page/about-company";
+@import "main-page/_modern-place";
+@import "main-page/_main-form";
+@import "404/_404";
+@import "architection/architection";
+@import "webcam/webcam";
+@import "developers/developers";
+@import "infostruction/infostruction";
+@import "news/news";
+@import "news-open/news-open";
+@import "documentation/documentation";
+@import "house-choose/house-choose";
+@import "location/location";
+@import "construction/construction";
+@import "advantages/advantages";
+@import "apartments/apartments";
+@import "apartments-flat/apartments-flat";
+@import "contacts-page/contacts-page";
+@import "parametrs/parametrs";
+@import "vital/vital";
+
+@import "media";
+
+* {
+	box-sizing: border-box;
+}
+
+i {
+	display: inline-block;
+}
+
+body, html {
+	height: 100%;
+	width: 100%;
+}
+body{
+	font-size: 16px;
+	font-family: 'OksanaSans',sans-serif;
+	color: $colorBlue;
+	cursor: url('../img/cursor/cursor2.cur'), url('../img/cursor/cursor2.png'), default;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+  overflow: hidden;
+  position: relative;
+  z-index: 10;
+}
+

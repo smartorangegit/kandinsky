@@ -1,0 +1,116 @@
+
+.contacts {
+	background: #f6f6f6;
+	
+}
+
+.contacts__info {
+	width: 306px;
+	position: absolute;
+	top: 155px;
+	left: 0;
+}
+
+.contacts__inner {
+	padding-top: 110px;
+	position: relative;
+	padding-bottom: 110px;
+	opacity: 0;
+	
+}
+
+.contacts__info_title {
+	@include calcF(30,30);
+	letter-spacing: 0.025em;
+}
+.contacts__info_subtitle {
+	margin-top: 30px;
+	font-family: 'OksanaSansDemiBold';
+	color: #010101;
+}
+.contacts__info_list {
+	padding-left: 10px;
+}
+
+.contacts__info_item {
+	@include calcF(14,30);
+	i {
+		margin-right: 20px;
+		vertical-align: middle;
+	}
+}
+
+.input-container {
+	@include clearfix;
+	margin-left: -3%;
+}
+
+.contacts__form_wrapper {
+	padding-left: 332px;
+}
+
+
+.contacts__form {
+	z-index: 1;
+	width: 100%;
+	text-align: center;
+	background: #fdfdfd;
+	padding: 45px 30px 20px;
+	position: relative;
+	input[type="text"], input[type="tel"],input[type="email"] {
+		display: block;
+		text-align: center;
+		width: 100%;
+		border: 1px solid $borderGrey;
+		background: transparent;
+		margin-bottom: 25px;
+		color: #000;
+		font-size: 16px;
+		font-family: 'OksanaSansItalic';
+		width: 30.333333%;
+		float: left;
+		padding: 15px 20px;
+		margin-left: 3%;
+		text-align: left;
+		outline: none;
+	}
+
+	.form-text {
+		width: 100%;
+		resize: none;
+		border: 1px solid $borderGrey;
+		outline: none;
+		padding: 20px;
+		font-family: 'OksanaSansItalic';
+		color: #000;
+		font-size: 1em;
+		height: 90px;
+	}
+
+	input[type="submit"] {
+		border: none;
+		font-size: 14px;
+		background: transparent;
+		cursor: pointer;
+		color: $colorBlue;
+		font-family: 'OksanaSans';
+		margin-top: 20px;
+	}
+
+	::-webkit-input-placeholder{
+		    color: #000;
+		    opacity: 1;
+		}
+	:-moz-placeholder{
+	    color: #000;
+	    opacity: 1;
+	}
+	::-moz-placeholder{
+	    color: #000;
+	    opacity: 1;
+	}
+	:-ms-input-placeholder{
+	   	color: #000;
+	    opacity: 1;
+	}
+}
