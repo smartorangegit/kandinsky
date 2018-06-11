@@ -10,7 +10,7 @@
 
 		<section class="video-container">
 			<div class="main-video">
-				<video autoplay muted loop class="main-video-bg" id="bgvideo">
+				<video playsinline autoplay muted loop class="main-video-bg" id="bgvideo">
 			  	<source src="/video/clipchamp.mp4" type='video/mp4;'></source>
 					<!-- <source src="video/video.ogv" type='video/ogg;'></source> -->
 					<source src="video/video.webm" type='video/webm;'></source>
@@ -231,7 +231,7 @@
 				</div>
 				<div class="modal_window__link"></div>
 			</div>
-    </div> 
+    </div>
 	<style>
 .modal_window__container {
 	position: fixed;
@@ -269,7 +269,7 @@
    width: 20%;
    text-align: center;
    display: inline-block;
-   font-size:16px; 
+   font-size:16px;
 }
 #clock div span {
     display: block;
@@ -320,15 +320,15 @@ position: absolute;
 		  minutesSpan.innerHTML = t.minutes;
 		  secondsSpan.innerHTML = t.seconds;
 
-		  
+
 		 },1000);
 		 if(t.total<=0){
 			  clearInterval(timeinterval);
-		  }else{ 
+		  }else{
 				var elem = document.getElementsByClassName("modal_window__container")[0];
 				elem.style.cssText = 'display:block;';
 
-		  } 
+		  }
 		}
 initializeClock('clock', deadline);
 
