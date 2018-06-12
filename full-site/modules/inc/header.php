@@ -226,30 +226,26 @@
 				<div class="menu__line menu__line-3"></div>
 			</div>
 		</div>
-<?php
-
-							$correct_mas=explode("/", $_SERVER['REQUEST_URI']);
-
-						if ($correct_mas[1]=='en'){
-						$Href=str_replace('/'.$correct_mas[1].'/', '/', $_SERVER['REQUEST_URI']);
-						$HrefMes='Рус';
-
-						}
-						else{
-							$Href='/en'.$_SERVER['REQUEST_URI'];
-							$HrefMes='Eng';
-						}
-
+		<?php
+			$correct_mas=explode("/", $_SERVER['REQUEST_URI']);
+				if ($correct_mas[1]=='en'){
+				$Href=str_replace('/'.$correct_mas[1].'/', '/', $_SERVER['REQUEST_URI']);
+				$HrefMes='Рус';
+				}
+				else{
+					$Href='/en'.$_SERVER['REQUEST_URI'];
+					$HrefMes='Eng';
+				}
 ?>
-	<a href="<?=$Href?>" style="color:inherit;"><div class="header__lang">
+	<a href="<?=$Href?>" style="color:inherit;">
+		<div class="header__lang">
 			<div class="menu-title__lang"><?=$mes['Язык']?></div>
-			<div class="menu-btn1">
-				<span class="lang__text"><?=$HrefMes?></span>
-
-			</div>
-		</div></a>
+			<div class="menu-btn1"><span class="lang__text"><?=$HrefMes?></span></div>
+		</div>
+	</a>
 
 	</div>
+
 	<div class="menu-open">
 			<div class="menu-open__inner">
 				<div class="table-row">
@@ -356,7 +352,56 @@
 					</div>
 				</div>
 			</div>
+		</div>
 
+		<div class="perfect_box">
+			<div class="perfect_box_item">
+				<a href="https://perfect-group.ua/ru/" target="_blank" title="Perfect Group">
+					<img src="/img/developers/perfect-logo.png" alt="Perfect Group">
+				</a>
+			</div>
+			<div class="perfect_box_item">
+				<a href="http://saga-development.com.ua/" target="_blank" title="Saga Development">
+					<img src="/img/developers/saga-logo.svg" alt="Saga Development">
+				</a>
+			</div>
+		</div>
+		<style media="screen">
+			.perfect_box{
+				width: 240px;
+		    position: fixed;
+		    bottom: 20px;
+		    right: 30px;
+				display: flex;
+				display: -webkit-flex;
+				justify-content: space-between;
+				-webkit-justify-content: space-between;
+				align-items: center;
+				-webkit-align-items: center;
+				transition: 0.45s;
+				-webkit-transition: 0.45s;
+			}
+			.perfect_box_item{
+				width: 50%;
+				box-sizing: border-box;
+				padding: 10px;
+			}
+			.perfect_box_item img{
+				width: 100%;
+				height: auto;
+			}
+			.perfect_box_item:last-child img{
+				display: block;
+				margin: 0 auto;
+				width: 75%;
+				height: auto;
+			}
+			.scrolled .perfect_box{
+				width: 140px;
+				bottom: 10px;
+				right: 10px;
+			}
+		</style>
 </header>
 <div class="promotions_btn">
 				<a href="<?=$mes['Акционные предложения ссылка']?>" class="promotions_btn__link"><?=$mes['Акционные предложения']?></a>
