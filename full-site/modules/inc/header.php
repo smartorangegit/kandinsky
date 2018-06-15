@@ -362,7 +362,7 @@
 			</div>
 			<div class="perfect_box_item">
 				<a href="http://saga-development.com.ua/" target="_blank" title="Saga Development">
-					<img src="/img/developers/saga-logo.svg" alt="Saga Development">
+					<img src="/img/developers/saga-logo-blue.svg" alt="Saga Development">
 				</a>
 			</div>
 		</div>
@@ -371,7 +371,7 @@
 				width: 240px;
 		    position: fixed;
 		    bottom: 20px;
-		    right: 30px;
+		    /* right: 30px; */
 				display: flex;
 				display: -webkit-flex;
 				justify-content: space-between;
@@ -399,7 +399,7 @@
 			.scrolled .perfect_box{
 				width: 140px;
 				bottom: 10px;
-				right: 10px;
+				/* right: 10px; */
 			}
 		</style>
 </header>
