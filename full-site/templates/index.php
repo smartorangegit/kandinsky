@@ -8,7 +8,9 @@
 			</div>
 		</div> -->
 
-     	<? include('preloader_saga.php'); ?>
+     	<?
+			// include('preloader_saga.php'); 
+			?>
 
 
 		<section class="video-container">
