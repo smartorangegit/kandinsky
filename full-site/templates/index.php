@@ -8,6 +8,9 @@
 			</div>
 		</div> -->
 
+     	<? include('preloader_saga.php'); ?>
+
+
 		<section class="video-container">
 			<div class="main-video">
 				<video playsinline autoplay muted loop class="main-video-bg" id="bgvideo">
