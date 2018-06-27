@@ -385,6 +385,23 @@
 				bottom: 10px;
 				/* right: 10px; */
 			}
+			@media screen and (max-width: 768px){
+				header {
+					padding: 0 10px 0 14px;
+				}
+				}
+			@media screen and (max-width: 450px){
+				.header__logo {
+				   width: 136px;
+				   margin-top: 5px;
+				}
+				}
+			@media screen and (max-width: 768px){
+				.grad__title_text {
+					font-size: 3em;
+				   line-height: 1;
+				}
+				}
 		</style>
 </header>
 <div class="promotions_btn" style="display:none;">
