@@ -157,7 +157,7 @@
 				<style>
 				.construction__webcam {margin: 43px auto 0 auto;}
 				#content1 .construction_item,#content2 .construction_item {width:100%;}
-				.block_hod-stroitelstva{height: 95px;}@media screen and (max-width:600px){.block_hod-stroitelstva{height: 128px;}}
+				.block_hod-stroitelstva{height: 95px;width: 100%;}@media screen and (max-width:600px){.block_hod-stroitelstva{height: 128px;}}
 				</style>
 				<!-- Nay My -->
 				<div class="construction__webcam">
