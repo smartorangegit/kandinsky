@@ -46,7 +46,7 @@ $id=$s['id'];
 $s['room']= mb_substr($s['number'],0,-1,'UTF-8');
 $pdf['number']=$s['room'];
 
- $img_flat='/img/houses/house'.$plan.'_black/floor'.$s['floor'].'/'.$s['img'].'.png';
+ $img_flat='/img/houses/house'.$plan.'_black/floor'.$s['floor'].'/'.$s['img'].'.svg';
 $s['pdf']=$img_flat;
 
 
