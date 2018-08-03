@@ -30,8 +30,15 @@
 								<ul class="contacts__info_list">
 									<li class="contacts__info_item"><i class="mail-ico"></i>marketing@saga-development.com.ua</li>
 									<li>
-										<a href="#"  class="collaboration_btn"><?=$mes['collaboration']?></a>
+										
 									</li>
+								</ul>
+							</div>
+							<div class="contacts__info_container contacts__info_marketing">
+								<p class="contacts__info_subtitle"><?=$mes['i-mesService-department']?></p>
+								<ul class="contacts__info_list">
+									<li class="contacts__info_item"><i class="phone-ico"></i>(044) 494 04 00</li>
+									<a href="#"  class="collaboration_btn"><?=$mes['collaboration']?></a>		
 								</ul>
 							</div>
 						</div>
