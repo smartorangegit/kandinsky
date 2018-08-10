@@ -38,10 +38,36 @@
 								<span class="color-blue"><?=$mes['КОМЕРЦІЙНИЙ ІНДУСТРІАЛЬНИЙ БАНК']?></span>
 							</div>
 						</div>
-						<p class="developers-title other-projects__title">
-							<span class="orange-text"><?=$mes['Інші</span> проекти цього забудовника']?>
+												<p class="developers-title other-projects__title">
+							<span class="orange-text"><?=$mes['Проекты</span> Perfect Group'] ?>
 						</p>
 						<div class="owl-carousel owl_custom_stying">
+						<div class="other-projects__project other-projects__project__5_kvartal">
+								<a target="_blank" href="https://perfect-group.ua/ru/projects/v-kvartal/"><img src="/img/other-projects-logos/5_kvartal.svg" alt="5_kvartal"></a>
+							</div>
+							<div class="other-projects__project other-projects__project__Lebediniy">
+								<a target="_blank" href="https://lebedinyiy.com.ua/ru/"><img src="/img/other-projects-logos/Lebediniy_Dark logo_for_site.svg" alt="Lebediniy"></a>
+							</div>
+							<div class="other-projects__project other-projects__project__Beregynya">
+								<a target="_blank" href="https://perfect-group.ua/ru/projects/bereginya/ "><img src="/img/other-projects-logos/Logo_vect.svg" alt="Beregynya"></a>
+							</div>
+							<!--<div class="other-projects__project other-projects__project__rybalsky">
+								<a target="_blank" href=""><img src="/img/other-projects-logos/Logotype_Final.svg" alt=""></a>
+							</div>-->
+							<div class="other-projects__project other-projects__project__Garden">
+								<a target="_blank" href=" http://www.the-garden.com.ua/"><img src="/img/other-projects-logos/Logotype_Final_text_gold.svg" alt="Garden"></a>
+							</div>
+							<div class="other-projects__project other-projects__project__Woodstoriya">
+								<a target="_blank" href="https://woodstoria.com.ua/ru/"><img src="/img/other-projects-logos/Woodstoriya_logo_refurbished.svg" alt="Woodstoriya"></a>
+							</div>
+						</div>
+						<p class="developers-title other-projects__title">
+							<span class="orange-text"><?=$mes['Інші</span> проекти цього забудовника'] ?>
+						</p>
+						<div class="owl-carousel owl_custom_stying">
+						
+
+						
 							<div class="other-projects__project other-projects__project__rybalsky">
 								<a target="_blank" href="https://rybalsky.com.ua/"><img src="/img/other-projects-logos/rybalsky_logo_blue.svg" alt="RYBALSKY"></a>
 							</div>
