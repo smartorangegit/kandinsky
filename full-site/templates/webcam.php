@@ -12,21 +12,43 @@
 					<p class="webcam-video__description">
 						<?=$mes['Строительство дома №3']?>
 					</p>
+				<?	/* <p class="webcam-video__description">
+					<?=$mes['Камеры не работают']?>
+						
+					</p> */ ?>
 					<div class="webcam-video__list">
 						<div class="webcam-video">
 							<div class="webcam-video__inner">
 								<div class="web-cam__online">
-									<iframe src="https://macparts.kiev.ua:8422/player.html" frameborder="0" allowfullscreen></iframe>
+									<iframe src="https://dnt.odessa.tv/kandinsky/cam1/" frameborder="0" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
 						<div class="webcam-video">
 							<div class="webcam-video__inner">
 								<div class="web-cam__online">
-									<iframe src="https://macparts.kiev.ua:8421/player.html" frameborder="0" allowfullscreen></iframe>
+									<iframe src="https://dnt.odessa.tv/kandinsky/cam2/" frameborder="0" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
+
+					</div>
+					<div class="webcam-video__list">
+						<div class="webcam-video">
+							<div class="webcam-video__inner">
+								<div class="web-cam__online">
+									<iframe src="https://dnt.odessa.tv/kandinsky/cam3/" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+						<div class="webcam-video">
+							<div class="webcam-video__inner">
+								<div class="web-cam__online">
+									<iframe src="https://dnt.odessa.tv/kandinsky/cam4/" frameborder="0" allowfullscreen></iframe>
+								</div>
+							</div>
+						</div>
+
 					</div>
 
 					<div class="webcam__contruction_btn">
