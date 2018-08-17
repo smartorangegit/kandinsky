@@ -252,49 +252,55 @@
 								</div>
 							</li>
 							<li id="menu-item-1" class="menu-open__item">
+								<div class="menu-open__item_inner" data-img="/img/happiness-with-a-view-at-the-sea/happiness-with-a-view-at-the-sea-bg.jpg" data-color="true">
+									<a href="<?=UrlAdd('happiness-with-a-view-at-the-sea')?>" class="menu-open__link"><?=$mes['happiness-with-a-view-at-the-sea-h1']?></a>
+
+								</div>
+							</li>
+							<li id="menu-item-2" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/location.jpg"  data-color="true">
 									<a href="<?=UrlAdd('location')?>" class="menu-open__link"><?=$mes['Расположение']?></a>
 									
 								</div>
 							</li>
-							<li id="menu-item-2" class="menu-open__item">
+							<li id="menu-item-3" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/advantages.jpg" data-color="true">
 									<a href="<?=UrlAdd('advantages')?>" class="menu-open__link"><?=$mes['Преимущества']?></a>
 									
 								</div>
 							</li>
-							<li id="menu-item-3" class="menu-open__item">
+							<li id="menu-item-4" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/render-img.jpg" data-color="true">
 									<a href="<?=UrlAdd('architection')?>" class="menu-open__link"><?=$mes['Архитектура']?></a>
 									
 								</div>
 							</li>
-							<li id="menu-item-4" class="menu-open__item">
+							<li id="menu-item-5" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/infostructure.jpg" data-color="true">
 									<a href="<?=UrlAdd('infostruction')?>" class="menu-open__link"><?=$mes['Инфраструктура']?></a>
 									
 								</div>
 							</li>
-							<li id="menu-item-5" class="menu-open__item">
+							<li id="menu-item-6" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/flats.jpg"  data-color="true">
 									<a href="<?=UrlAdd('houses')?>" class="menu-open__link"><?=$mes['Квартиры']?></a>
 									
 								</div>
 							</li>
 							
-							<li id="menu-item-6" class="menu-open__item">
+							<li id="menu-item-7" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/construction.jpg">
 									<a href="<?=UrlAdd('construction')?>" class="menu-open__link"><?=$mes['Строительство']?></a>
 									
 								</div>
 							</li>
-							<li id="menu-item-11" class="menu-open__item">
+							<li id="menu-item-8" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/webcam.jpg" data-color="true">
 									<a href="<?=UrlAdd('webcam')?>" class="menu-open__link"><?=$mes['webcam']?></a>
 								</div>
 							</li>
 
-							<li id="menu-item-8" class="menu-open__item">
+							<li id="menu-item-9" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/builder.jpg">
 									<a href="<?=UrlAdd('developers')?>" class="menu-open__link"><?=$mes['Застройщик']?></a>
 								</div>
@@ -305,13 +311,13 @@
 									
 								</div>
 							</li>
-							<li id="menu-item-7" class="menu-open__item">
+							<li id="menu-item-11" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/news.jpg" data-color="true">
 									<a href="<?=UrlAdd('news')?>" class="menu-open__link"><?=$mes['Новости']?></a>
 									
 								</div>
 							</li>
-							<li id="menu-item-9" class="menu-open__item">
+							<li id="menu-item-12" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/contacts.jpg" data-color="true">
 									<a href="<?=UrlAdd('contacts')?>" class="menu-open__link"><?=$mes['Контакты']?></a>
 								</div>
