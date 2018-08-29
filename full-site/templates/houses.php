@@ -2,11 +2,11 @@
 	<div class="wrapper">
 		<section class="house-choose">
 			<div class="house-choose--svg">
-				<svg version="1.1" id="house-choose-svg" 
+				<svg version="1.1" id="house-choose-svg"
 				 viewBox="0 0 1360 700" >
 						<image id="svg--img" style="overflow:visible;" width="1360" height="700" xlink:href="/img/house-choose/house-choose.jpg" >
 						</image>
-						
+
 						<g>
 							<g class="houses__part--container"><path class="houses--svg-part"     style="cursor: default; fill: none;"  d="M842.9,232.6l-1.7,26.9l-0.9,0.4v5.1l0.7,0.3l-0.7,7.6h-0.9v4l1.1,0.9v3.3l-1.9,2.5v5.8h0.6l-0.6,6.6H838v8.5
 							h1.1v1.3l-1.1,0.9v4.1h0.9l-0.9,8h-1.4v7h0.8v2.1h-0.8l-0.6,0.6v4.1l1.4,0.9v7.1l-2.3,0.8v6.6l1.1,0.8v1.4l-1.1,0.9v4l0.9,0.8v6.4
@@ -71,13 +71,13 @@
 								<rect x="750.7" y="298.5" class="st3" width="58.9" height="22.1"/>
 								<text transform="matrix(1 0 0 1 761.5816 312.3433)" class="st2 st4 st5"><?= $mes['houses-Дом']; ?> 4</text>
 								<text transform="matrix(1 0 0 1 749.7526 334.4686)" class="st3 st4 st5"><?= $mes['houses-Этажей']; ?> 20</text>
-								<text transform="matrix(1 0 0 1 744.4567 358.5397)"><tspan x="0" y="0" class="st3 st4 st5"><?= $mes['houses-Кол-во']; ?></tspan><tspan x="0" y="10" class="st3 st4 st5"><?= $mes['houses-квартир:']; ?> 100</tspan></text>
+								<text transform="matrix(1 0 0 1 744.4567 358.5397)"><tspan x="0" y="0" class="st3 st4 st5"><?= $mes['houses-Кол-во']; ?></tspan><tspan x="0" y="10" class="st3 st4 st5"><?= $mes['houses-квартир:']; ?> 246</tspan></text>
 							</g>
 						</g>
-					</a>	
-				
+					</a>
+
 						<g class="houses__part--container">
-						
+
 							<path class="houses--svg-part"  style="cursor: default; fill: none;"  d="M562,476.1c0,0-14.6,3.1-38,2.9c-6.3,0-6.4-1.4-6.4-1.4V474l-8.8-1.4c0,0-4.1-0.5-8.1,0.9
 							c-2.5,1.1-5.9,0.8-9.8,0s-8.5-2.3-8.5-2.3s-1.3-0.1-1.3-1.9c0-1.8,0-10,0-10l-2.1-1.2c0,0-1.3-0.3-1.3-1.9s0-6.3,0-6.3
 							s-0.1-0.9,0.9-1.6s1.6-1.3,1.6-1.3l-2.5-1.6c0,0-1.2,0.1-1.2-3.3s0-2.5,0-2.5s0.3-2,2.2-3.1c-1.1-0.6-1.9-1.1-1.9-1.1
@@ -109,7 +109,7 @@
 								<text transform="matrix(1 0 0 1 586 334.4686)" class="st3 st4 st5"><?= $mes['houses-Этажей']; ?> 20</text>
 								<text transform="matrix(1 0 0 1 581 358.5397)"><tspan x="0" y="0" class="st3 st4 st5"><?= $mes['houses-Кол-во']; ?></tspan><tspan x="0" y="10" class="st3 st4 st5"><?= $mes['houses-квартир:']; ?> 100</tspan></text>
 							</g>
-							
+
 						</g>
 			<a xlink:href="<?=UrlAdd('plan3/sections1/floor2')?>">
 						<g class="houses__part--container">
@@ -165,7 +165,7 @@
 								<rect x="455" y="298.5" class="st3" width="58.9" height="22.1"/>
 								<text transform="matrix(1 0 0 1 461 312.3433)" class="st2 st4 st5"><?= $mes['houses-Дом']; ?> 3</text>
 								<text transform="matrix(1 0 0 1 456 334.4686)" class="st3 st4 st5"><?= $mes['houses-Этажей']; ?> 21</text>
-								<text transform="matrix(1 0 0 1 451 358.5397)"><tspan x="0" y="0" class="st3 st4 st5"><?= $mes['houses-Кол-во']; ?></tspan><tspan x="0" y="10" class="st3 st4 st5"><?= $mes['houses-квартир:']; ?> 279</tspan></text>
+								<text transform="matrix(1 0 0 1 451 358.5397)"><tspan x="0" y="0" class="st3 st4 st5"><?= $mes['houses-Кол-во']; ?></tspan><tspan x="0" y="10" class="st3 st4 st5"><?= $mes['houses-квартир:']; ?> 274</tspan></text>
 							</g>
 						</g>
 						</a>
@@ -206,18 +206,13 @@
 									</li>
 								</ul>
 							</div>
-							
-							
+
+
 						</div>
 					</div>
 				</div>
 			</div>
 		<?php  /*** modules/inc/form/ */ FormInclude('form_apartments', $kv);?>
 		</section>
-		
+
 <?php	 FooterAdd(); ?>
-
-
-	
-	
-

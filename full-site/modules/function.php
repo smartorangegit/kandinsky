@@ -14,11 +14,11 @@ function HeadAdd($html=['html'=>'', 'head'=>true]){ GLOBAL $mes,$SETPAGE;
 	if(!$html['title'])
 	{
 		$html['title']=$mes[$SETPAGE.'-title'];
-		
+
 		if (empty($mes[$SETPAGE.'-title']))
 		{
 			$html['title']=$mes['text-title'].' '.$mes[$SETPAGE.'-h1'].' '.$mes['text-title1'];
-		}	
+		}
 	}
 	if($html['title'] && $html['disable-auto-title'])
 	{
@@ -29,19 +29,19 @@ function HeadAdd($html=['html'=>'', 'head'=>true]){ GLOBAL $mes,$SETPAGE;
 		if(!$html['description'])
 		{
 					$html['description']=$mes[$SETPAGE.'-description'];
-				
+
 					if (empty($mes[$SETPAGE.'-description']))
 					{
 						$html['description']=$mes[$SETPAGE.'-h1'].' '.$mes['text-description'];
-					}	
+					}
 		}
-	}	
+	}
 	if (!$html['robots']) {$html['robots']='index, follow';}
 	//if (!$html['alternate']) {$html['alternate']=alternateAdd($_SERVER["REQUEST_URI"]);}
 	if (strripos($_SERVER['REQUEST_URI'], '/?')!==false) {	$html['robots'] = 'noindex, nofollow'; }
 
 	?>
-	
+
 	<head>
 		<meta charset="UTF-8">
 		<meta name="robots" content="<?=$html['robots']?>">
@@ -61,7 +61,7 @@ function HeadAdd($html=['html'=>'', 'head'=>true]){ GLOBAL $mes,$SETPAGE;
 		<?else:?>
 		<link rel="canonical" href="<?='http://'.$_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI'];?>"/>
 		<?endif;?>
-		
+
 		<?if($html['description']!='N'):?>
 		<meta name="description" content="<?=$html['description']?>">
 		<?endif;?>
@@ -78,44 +78,44 @@ function HeadAdd($html=['html'=>'', 'head'=>true]){ GLOBAL $mes,$SETPAGE;
 		<?/*Виводиться на всіх сторінках*/?>
 		<link rel="icon" href="/img/favicon.ico" type="image/x-icon">
 		<link rel="stylesheet" href="<?scripts('css/style.min.css')?>">
-		
+
 		<?/***End*/?>
 
 	</head>
-<?if($html['head']){ echo '<body> 	
+<?if($html['head']){ echo '<body>
 	<!-- Google Tag Manager (noscript) -->
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MWLZSCR"
 	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 	<!-- End Google Tag Manager (noscript) -->
-	';} 
+	';}
 	}
-	
+
 
 function HeaderInclude(){	 global $mes;
-	
-		require (__DIR__.'/inc/header.php'); 
-	
+
+		require (__DIR__.'/inc/header.php');
+
 	}
-	
+
 function H1page(){ GLOBAL $mes,$SETPAGE;
 
 	echo $mes[$SETPAGE.'-h1'];
-}	
-	
-	
-	
+}
+
+
+
 function FooterAdd($html=['html'=>'', 'head'=>true]){ GLOBAL $mes,$site_url;	?>
 	<? /*Виводиться на всіх сторінках*/?>
-	
+
 <!-- Footer -->
 	<? include_once(__DIR__.'/inc/footer.php'); ?>
 <!-- Footer end-->
 	</div>
-	
+
 	<script  src="<?scripts('js/scripts.js')?>"></script>
 		<script defer src="<?scripts('js/libs/jquery.inputmask.min.js')?>"></script>
 
-<?	
+<?
 if($html['html']): echo $html['html'];		endif;
 if($html['head']!=false){ echo  '</body></html>';}
 
@@ -172,15 +172,15 @@ function alternateAdd($url_origin=''){ global $site_url, $len_default, $len;
 			<link rel="alternate" hreflang="'.$t.'" href="'.$site_url.'/'.$t.substr($url_origin, 3).'" />';
 		}
 	}
-	else 
+	else
 	{
 		$st='<link rel="alternate" hreflang="'.$len_default.'" href="'.$site_url.$url_origin.'" />';
 		foreach ($len as $t)
 		{
 			$st.='
-			<link rel="alternate" hreflang="'.$t.'" href="'.$site_url.'/'.$t.$url_origin.'" />';		
+			<link rel="alternate" hreflang="'.$t.'" href="'.$site_url.'/'.$t.$url_origin.'" />';
 		}
-	 } 
+	 }
  return $st;
 }
 
@@ -203,7 +203,7 @@ $rr='img/houses/doma/dom'.$plan.'/'.$img.'/'.$svg.'.php';
 }
 	//For plan
 function FloorPrevNextAdd($plan,$sec,$floor,$floor_next,$floor_prev, $compas=0){ global $mes ?>
-			 
+
 			 <div class="apartments-compass compass-ico" data-rotate="<?=$compas?>deg" >
 				<span class="compass-letter compass-north"><?=$mes['C']?></span>
 				<span class="compass-letter compass-west"><?=$mes['З']?></span>
@@ -214,10 +214,78 @@ function FloorPrevNextAdd($plan,$sec,$floor,$floor_next,$floor_prev, $compas=0){
 							<a href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor'.$floor_prev)?>" class="prev-floor"><i class="arrow-left-thin"></i></a>
 								<span class="current-floor"><?=$mes['fl-mes9']?> <?=$floor[0]?></span>
 							<a href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor'.$floor_next)?>" class="next-floor"><i class="arrow-right-thin"></i></a>
+
+							<div class="select-level-floor-list">
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor2')?>"><?=$mes['fl-mes9']?> 2</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor3')?>"><?=$mes['fl-mes9']?> 3</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor4')?>"><?=$mes['fl-mes9']?> 4</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor5')?>"><?=$mes['fl-mes9']?> 5</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor6')?>"><?=$mes['fl-mes9']?> 6</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor7')?>"><?=$mes['fl-mes9']?> 7</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor8')?>"><?=$mes['fl-mes9']?> 8</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor9')?>"><?=$mes['fl-mes9']?> 9</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor10')?>"><?=$mes['fl-mes9']?> 10</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor11')?>"><?=$mes['fl-mes9']?> 11</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor12')?>"><?=$mes['fl-mes9']?> 12</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor13')?>"><?=$mes['fl-mes9']?> 13</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor14')?>"><?=$mes['fl-mes9']?> 14</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor15')?>"><?=$mes['fl-mes9']?> 15</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor16')?>"><?=$mes['fl-mes9']?> 16</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor17')?>"><?=$mes['fl-mes9']?> 17</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor18')?>"><?=$mes['fl-mes9']?> 18</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor19')?>"><?=$mes['fl-mes9']?> 19</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor20')?>"><?=$mes['fl-mes9']?> 20</a>
+									<a class="select-level-floor-list__item" href="<?=UrlAdd($text='plan'.$plan.'/sections'.$sec.'/floor21')?>"><?=$mes['fl-mes9']?> 21</a>
+								</div>
+
+								<div class="open_select_list">
+									<svg xmlns="http://www.w3.org/2000/svg" height="13.743773" viewBox="0 0 26.808785 13.743772" width="26.808784"><path d="m.67515826.73767292 12.72923374 11.65048508 12.729234-11.65048508" fill="none" stroke="#2b4d5c" stroke-width="2"/></svg>
+								</div>
 			</div>
-			 
-			 
-			
+<style media="screen">
+.select-level-floor-list{
+	display: flex;
+  flex-direction: column;
+  max-height: 0px;
+  overflow: hidden;
+	position: relative;
+	/* top: -19px; */
+	/* background: #fff; */
+	transition: 0.6s ease-in-out;
+}
+.select-level-floor-list a{
+	color: inherit;
+	text-decoration: none;
+	display: block;
+	position: relative;
+	transition: 0.4s ease-in-out;
+}
+.select-level-floor-list a:hover{
+	padding-left: 12px;
+}
+.select-level-floor-list-opened{
+	max-height: 385px;
+}
+.open_select_list{
+	width: 16px;
+  text-align: center;
+  margin: 0 auto;
+	cursor: pointer;
+}
+.open_select_list svg{
+	transform: scaleY(1);
+	-webkit-transform: scaleY(1);
+	transition: 0.6s ease-in-out;
+}
+.open_select_list svg.rotated{
+	transform: scaleY(-1);
+	-webkit-transform: scaleY(-1);
+}
+
+</style>
+
+
+
 			<? }
 	//For plan
 function ParametrFlats(){
@@ -280,7 +348,7 @@ function enterAdminka($correct_link){
 
 if (strripos($correct_link, '.php')===false) {
 	$correct_link.='index.php';
-} 
+}
 $dt='admin';
 	require($correct_link);
 
@@ -297,7 +365,7 @@ $t='';
 }
 
 function img($img='', $lazy=true) {
-	
+
 	if ($img) {
 		echo 'src="'.$img.'"';
 	}
@@ -306,9 +374,9 @@ function img($img='', $lazy=true) {
 function FormInclude($id, $par=''){ GLOBAL $mes;
 	$kv=$par;
 	$webAd=$_SERVER['SCRIPT_URI'];
-		
+
 	 include("inc/form/".$id.".php");
-		
+
 }
 
 function cropStrWord($text, $max_words=15, $append = '')
@@ -319,7 +387,7 @@ function cropStrWord($text, $max_words=15, $append = '')
        $text = implode(' ', $words) . $append;
 	   $text = str_replace("<p>", "",  $text);
 	   $text = str_replace("</p>", "", $text);
-	   
+
        return $text;
 }
 
@@ -330,11 +398,11 @@ function cropStrStyle($text)
      //  $text = implode(' ', $words) . $append;
 	$count=count($words);
 	   foreach ($words as $key=>$t){
-		   
+
 		   if ($key==$count%2) { $words[$key]='<span class="orange-text">'.$t.'</span>';	}
 		   if ($key==$count-2) { $words[$key]='<span class="italic-text">'.$t;	}
 		   if ($key==$count-1) { $words[$key]=$t.'</span>';	}
-		 
+
 	   }
 	     $text = implode(' ', $words);
 
@@ -344,7 +412,7 @@ function cropStrStyle($text)
 
 
 /** Підбір новин*/
-function LoadingNews($postnumbers='', $offset='') { 
+function LoadingNews($postnumbers='', $offset='') {
 	LangAdd();
 	global $db, $mes, $len_default;
 		/*
@@ -361,51 +429,51 @@ $lg=$LANG;
 	$result->execute();
 	$result->store_result();	$num=$result->num_rows;
 
-	if ($postnumbers>$num) {$offset=0;} 
+	if ($postnumbers>$num) {$offset=0;}
 //echo $postnumbers;
 //echo $offset;
-	$result = $db->prepare("SELECT date, news_code,name_news_$lg,description_$lg,img_name,full_text_$lg, min_text_$lg, img_path, img_name, time FROM news 
+	$result = $db->prepare("SELECT date, news_code,name_news_$lg,description_$lg,img_name,full_text_$lg, min_text_$lg, img_path, img_name, time FROM news
 							WHERE isActive=0 AND name_news_$lg!='' ORDER BY date DESC  LIMIT $postnumbers OFFSET $offset");
 	$result->execute();
 	$result->store_result();
 	$result->bind_result($s['date'],$s['urls'],$s['name_news'],$s['description'],$s['filename'],$s['text'],$s['mini_text'],$s['img-min'],$s['img'],$s['time']);
-	$i=0; $it=0; 
+	$i=0; $it=0;
 	 while ($result->fetch()) { //$s['img_news'] = '/admin/news/images/'.$s['filename'];
 								$s['img_news'] = $s['img-min'].'/'.$s['img'];
 								$s['img-min'].='/min_'.$s['img'];
 								if(!file_exists($s['img-min'])){$s['img-min']=$s['img_news'];}
-								
+
 								//$s['mini_text']	=cropStrWord($text=$s['text']);
 								$s['urls']='news/'.$s['urls'];
-		
+
 				foreach($s as $key=>$k){			$rez[$key]=$k;	}
 								//if($i>=$news_onpage_start AND $i<=$news_onpage_end){	 $ReaNews[$it]=$rez; $it++;	}
 								$ReaNews[$it]=$rez; $it++;
 	   $i++; }
-	   
+
 	   return array('ReaNews'=>$ReaNews, 'num'=>$num);
-	   		
+
 	}
 
 
-	
+
 	/** Структура галереї*/
 	function Gallery_list($postnumbers=0, $offset=0, $img=array(), $typ=0){ GLOBAL $db,$len_default;
 		$i=$n=1;
-		
-		
+
+
 if($_POST['lang']==''){$lg=$len_default;}else{$lg=substr($_POST['lang'], 0,2);}
 
 $result = $db->prepare("SELECT date, hod_name_$lg, hod_full_$lg, path,ar_imgs, section_number
 	FROM hod_stroy WHERE isActive=0 AND section_number=$typ ORDER BY date DESC");
 	$result->execute();
 	$result->bind_result($s['date'],$s['name'],$s['text'],$s['img-url'],$s['ar_imgs'],$s['section_number']);
-	
+
 	 while ($result->fetch()) {
-		 
+
 			$date = new DateTime($s['date']);
 			$time = new DateTime($s['time']);
-			
+
 		$ss['date']=$date->format('d.m.Y');
 		$ss['time']=$time->format('h:i');
 		$ss['imgs']=explode('*/*', $s['ar_imgs']);
@@ -413,32 +481,32 @@ $result = $db->prepare("SELECT date, hod_name_$lg, hod_full_$lg, path,ar_imgs, s
 		$ss['text']=$s['name'];
 		$ss['img-url']=$s['img-url'].'/';
 		$ss['section']=$s['section_number'];
-		
+
 		 foreach($ss as $key=>$k){			$rez[$key]=$k;	}
-		
-	$ReaPost[]=$rez;  
+
+	$ReaPost[]=$rez;
 	 }
-	 
+
 	 	$result = $db->query("SELECT * FROM pers");
 	 while ($row = $result->fetch_assoc()) {
-		 
+
 		$PERC=$row;
-		
+
 	 }
 	 for ($i=1; $i<=4; $i++){
-		 
+
 	 $PERC['perOpis_'.$i]=explode('/',   $PERC['perOpis_'.$i]);
-		 
+
 	 }
 	 $i=1;
-	
-		foreach ($ReaPost as $key=>$t) { 
-		
-		
-		
-		if($offset>=$i ) { $i++; continue;  } 
+
+		foreach ($ReaPost as $key=>$t) {
+
+
+
+		if($offset>=$i ) { $i++; continue;  }
 		if($postnumbers<$n ) { $i++; continue;  }
-		
+
 		?>
 					<div class="construction_item">
 						<div class="construction_item_iner">
@@ -455,23 +523,23 @@ $result = $db->prepare("SELECT date, hod_name_$lg, hod_full_$lg, path,ar_imgs, s
 								</p>*/?>
 						</div>
 					</div>
-					
-		<?  $n++; $i++; }
-		
-	}
-	
 
-	function scripts($file)	{ 
+		<?  $n++; $i++; }
+
+	}
+
+
+	function scripts($file)	{
 		///***Якщо э / - Видаляем перший символ **
-			if ($file[0]=='/') { 
-			
+			if ($file[0]=='/') {
+
 			mb_internal_encoding("UTF-8");
 			 $file = mb_substr( $file, 1);
 			}
-			
+
 		$file ='/'.$file.'?v='.filemtime($file);
-		
-		echo $file; 
+
+		echo $file;
 	}
-	
-global 	 $mes;	
+
+global 	 $mes;

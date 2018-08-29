@@ -25,7 +25,7 @@
 							<img <?img($img_flat)?>  <?AltImgAdd($mes['fl-mes1'].' '.$REZULT2['number'])?>>
 						</div>
 					</div>
-					
+
 					<div class="apartments__info apartments__floor">
 							 <?/*Кнопки вибору поверху*/FloorPrevNextAdd($plan,$sec,$floor,$floor_next,$floor_prev, $si['compas']);?>
 						<ul class="apartments__info_param">
@@ -37,10 +37,10 @@
 							<h4 class="floor__min-plan_title"><?=$mes['f-mes6']?></h4>
 							<?/*<img src="/img/apartments/floor-plan.png" alt="">*/?>
 								<?include($_SERVER['DOCUMENT_ROOT'].'/'.svg_plan($si['img']));?>
-						
+
 						</div>
 					</div>
-		
+
 				</div>
 
 				<div class="apartments__param">
@@ -51,19 +51,23 @@
 							<span class="apartments__param_val"><?=$s?></span>
 							<h4 class="apartments__param_name"><?=$mas1[$k]?></h4>
 						</li>
-					 
+
 					<?}}?>
-					
+
 					</ul>
 				</div>
-				
-				
+
+
 			</div>
 			<?php /*** modules/inc/form/ */ FormInclude('form_apartments', $kv);?>
 		</section>
-			
+
 
 <?php	 FooterAdd();		?>
-	
-	
+<script type="text/javascript">
+$('.open_select_list').click(function(){
+	$('.select-level-floor-list').toggleClass('select-level-floor-list-opened');
+	$('.open_select_list svg').toggleClass('rotated');
+})
 
+</script>
