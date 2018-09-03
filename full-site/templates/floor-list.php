@@ -30,7 +30,7 @@
                             <div class="section__number_title"><?=$mes['f-mes4']?></div>
                         </div>*/?>
 					</div>
-					
+
 				</div>
 				<div class="apartments__param"  id='flats' >
 					<h2 class="apartments__para_title"><?=$mes['f-mes7']?></h2>
@@ -61,19 +61,19 @@
 							<h4 class="apartments__param_name"><?=$mes['fl-mes7']?></h4>
 						</li>
 					</ul>
-				</div>	
-				
+				</div>
+
 			</div>
-	
+
 		</section>
 <style>
 <?
-foreach($clas_css as $key=>$s){  
-	if ($REZULT[$key]['kim']==1) $color='#b17c57'; 
-	else if($REZULT[$key]['kim']==2) $color='#234c5a'; 
-	else if($REZULT[$key]['kim']==3) $color='#926da2'; 
-	
-	if ($REZULT[$key]['sales']) $color='#f4ede7'; 
+foreach($clas_css as $key=>$s){
+	if ($REZULT[$key]['kim']==1) $color='#b17c57';
+	else if($REZULT[$key]['kim']==2) $color='#234c5a';
+	else if($REZULT[$key]['kim']==3) $color='#926da2';
+
+	if ($REZULT[$key]['sales']) $color='#f4ede7';
  echo '.'.$s.'_{ opacity: 0.8; fill:'.$color.';}';
 }
 ?>
@@ -91,7 +91,7 @@ $('.<?=$clas_js[$key]?>').mouseover(function(e) {
   document.getElementById("all_room_s").innerHTML = "<?=$s['all_room']?> <span><?=$mes['pl-mes7']?> <?=$mes['fl-mes8']?></span>";
  <?// document.getElementById("flats").style = "display:block";>?>
   $('.flats').css("display", "block");
-  
+
       var x = e.pageX;
     var y = e.pageY;
     var leftPos = x - $('.lin_<?=$i?>').width() - 250;
@@ -102,7 +102,7 @@ $('.<?=$clas_js[$key]?>').mouseover(function(e) {
 {
 <?//document.getElementById("flats").style = "display:none";
  // $('.flats').css("display", "none");?>
- 
+
   document.getElementById("number_s").innerHTML = "X";
   document.getElementById("room_s").innerHTML = "X";
   document.getElementById("life_room_s").innerHTML = "X <span><?=$mes['pl-mes7']?>м&sup2;</span>";
@@ -117,15 +117,21 @@ $('.<?=$clas_js[$key]?>').mouseover(function() {
 $('.lin_<?=$i?>').css('display', 'none');
 });
  <? } ?>
- 
+
+
+
+
+</script>
+
+<script type="text/javascript">
+$('.open_select_list').click(function(){
+	$('.select-level-floor-list').toggleClass('select-level-floor-list-opened');
+	$('.open_select_list svg').toggleClass('rotated');
+})
+
 </script>
 
 <?$Js= ob_get_clean(); ?>
 
 
 <?php	 FooterAdd(array('html'=>$Js, 'head'=>true)); ?>
-
-
-
-	
-

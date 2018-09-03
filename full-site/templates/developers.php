@@ -16,13 +16,13 @@
 						<div class="developers__list">
 							<div class="developers__item">
 								<a target="_blank" href="https://perfect-group.ua">
-									<img <?img("/img/developers/perfect-logo.png")?> height="75" width="156" alt="">
+									<img <?img("/img/developers/perfect-logo.png")?> height="" width="156" alt="">
 								</a>
 								<!--<span class="color-blue">PERFECT GROUP</span>-->
 							</div>
 							<div class="developers__item">
 								<a target="_blank" href="http://saga-development.com.ua/">
-									<img <?img("/img/developers/saga-logo.svg")?> height="100" width="177" alt=""> 
+									<img <?img("/img/developers/saga-logo.svg")?> height="100" width="177" alt="">
 								</a>
 								<!--<span class="gray_color">RIVERSIDE DEVELOPMENT</span>-->
 							</div>
@@ -34,7 +34,7 @@
 							<div class="developers__item">
 							<a target="_blank" href="https://cib.com.ua">
 								<img <?img("/img/developers/comercil-bank.png")?> width="140" alt="">
-							</a>	
+							</a>
 								<span class="color-blue"><?=$mes['КОМЕРЦІЙНИЙ ІНДУСТРІАЛЬНИЙ БАНК']?></span>
 							</div>
 						</div>
@@ -65,9 +65,9 @@
 							<span class="orange-text"><?=$mes['Інші</span> проекти цього забудовника'] ?>
 						</p>
 						<div class="owl-carousel owl_custom_stying">
-						
 
-						
+
+
 							<div class="other-projects__project other-projects__project__rybalsky">
 								<a target="_blank" href="https://rybalsky.com.ua/"><img src="/img/other-projects-logos/rybalsky_logo_blue.svg" alt="RYBALSKY"></a>
 							</div>
@@ -91,5 +91,5 @@
 				</div>
 			</div>
 		</div>
-		
+
 <?php	 FooterAdd();		?>
