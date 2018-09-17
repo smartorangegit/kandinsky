@@ -27,7 +27,7 @@
 		</span>
 		</div>
 		<style media="screen">
-			.social_links{display: inline-block; vertical-align: middle; text-decoration: none; margin: 0 6px;} .social_links svg{width: 26px; height: 26px;}
+			.social_links{display: inline-block; vertical-align: middle; text-decoration: none; margin: 0 6px; max-width: 26px;}
 		</style>
 
 
