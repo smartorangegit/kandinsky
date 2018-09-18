@@ -16,18 +16,21 @@
 		<!-- <div class="preloader">
 			<div class="preloader__svg">
 				<svg id="svgB" width="100%" height="100%" viewBox="0 0 1360 93" preserveAspectRatio="xMidYMid meet">
-				
+
 				</svg>
 			</div>
 		</div> -->
-		
+
 		<div class="content">
 			<div class="grad__title">
 				<div class="grad__title_logo">
 					<p class="grad__title_text"><?=$mes['Kandinsky Odessa Residence — счастье с видом на море']?></p>
 				</div>
 				<p class="grad__title_body">
-					<?=$mes['<span>KANDINSKY Odessa Residence</span> расположен в курортной части Одессы, на Французском бульваре. Прежде здесь размещались дачи одесских аристократов, сегодня же здесь живописные парки соседствуют с домами отдыха и уютными ресторанами.']?>  
+					<?=$mes['<span>KANDINSKY Odessa Residence</span> расположен в курортной части Одессы, на Французском бульваре. Прежде здесь размещались дачи одесских аристократов, сегодня же здесь живописные парки соседствуют с домами отдыха и уютными ресторанами.']?>
+				</p>
+				<p class="grad__title_body">
+				<?=$mes['Город в котором есть все']?>
 				</p>
 			</div>
 			<div class="block-end">
@@ -38,11 +41,17 @@
 					<div class="location-about__item location-about__item-1">
 						<div class="location-about-pict">
 							<img <?img("/img/happiness-with-a-view-at-the-sea/1.jpg")?> alt="<?=$mes['happiness-with-a-view-at-the-sea-title']?>">
+							<div class="img-decoration pict-circle"></div>
+							<div class="img-decoration pict-angle-lines">
+								<div class="angle-line"></div>
+								<div class="angle-line"></div>
+							</div>
+							<div class="img-decoration curve-vertical"></div>
 						</div>
+
 						<div class="location-about__text">
 							<p class="location-about__title"><?=$mes['Любоваться морем']?></p>
-							<p class="location-about__paragraph"><?=$mes['Удачный день начинается со встречи с морем']?>
-</p>
+							<p class="location-about__paragraph"><?=$mes['Удачный день начинается со встречи с морем']?></p>
 						</div>
 					</div>
 					<div class="location-about__item location-about__item-2">
@@ -50,13 +59,24 @@
 							<p class="location-about__title"><?=$mes['Наслаждаться пляжным отдыхом']?></p>
 							<p class="location-about__paragraph"><?=$mes['Решение прогуляться по набережной или позагорать']?></p>
 						</div>
-						<div class="location-about-pict">
+						<div class="location-about-pict pict-poz">
 							<img <?img("/img/happiness-with-a-view-at-the-sea/2.jpg")?> alt="<?=$mes['happiness-with-a-view-at-the-sea-title']?>">
+							<div class="img-decoration pict-angle-lines" style="position: absolute; top: 5%; left: -7%;">
+								<div class="angle-line"></div>
+								<div class="angle-line"></div>
+							</div>
+							<div class="img-decoration curve-horizontal-grey" style="position: absolute;top: -8%;left: 45%;"></div>
 						</div>
 					</div>
 					<div class="location-about__item location-about__item-1">
-						<div class="location-about-pict">
+						<div class="location-about-pict pict-dog">
 							<img <?img("/img/happiness-with-a-view-at-the-sea/3.jpg")?> alt="<?=$mes['happiness-with-a-view-at-the-sea-title']?>">
+							<div class="img-decoration pict-angle-lines" style="left: auto; right: -10%;">
+								<div class="angle-line"></div>
+								<div class="angle-line"></div>
+							</div>
+							<div class="img-decoration curve-vertical" style="left: auto; right: -23px;top: 0;"></div>
+							<!-- <div class="img-decoration pict-circle"></div> -->
 						</div>
 						<div class="location-about__text">
 							<p class="location-about__title"><?=$mes['Гулять по Французскому бульвару']?></p>
@@ -70,11 +90,19 @@
 						</div>
 						<div class="location-about-pict">
 							<img <?img("/img/happiness-with-a-view-at-the-sea/4.jpg")?> alt="<?=$mes['happiness-with-a-view-at-the-sea-title']?>">
+							<div class="img-decoration pict-circle" style="top: 80%; left: -12%;"></div>
+							<div class="img-decoration pict-angle-lines" style="top: 69%; left: -10%;">
+								<div class="angle-line" style="-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg); transform: rotate(45deg);"></div>
+								<div class="angle-line" style="-webkit-transform: rotate(45deg);-ms-transform: rotate(45deg); transform: rotate(45deg);"></div>
+							</div>
+							<div class="img-decoration zig-zag" style="top: 64%; right: -18%;"></div>
 						</div>
 					</div>
 					<div class="location-about__item location-about__item-1">
 						<div class="location-about-pict">
 							<img <?img("/img/happiness-with-a-view-at-the-sea/5.jpg")?> alt="<?=$mes['happiness-with-a-view-at-the-sea-title']?>">
+							<div class="img-decoration pict-circle"></div>
+							<div class="img-decoration curve-horizontal-grey" style="position: absolute;top: 4%;right: -50px;"></div>
 						</div>
 						<div class="location-about__text">
 							<p class="location-about__title"><?=$mes['Радоваться жизни']?></p>
@@ -82,22 +110,24 @@
 						</div>
 					</div>
 					<div class="location-about__item location-about__item-2">
-						<div class="location-about__text">
+						<div class="location-about__text text-disco">
 							<p class="location-about__title"><?=$mes['Всегда быть в центре событий']?></p>
 							<p class="location-about__paragraph"><?=$mes['В Kandinsky Odessa Residence сосредоточен весь спектр городских развлечений']?></p>
 						</div>
 						<div class="location-about-pict">
 							<img <?img("/img/happiness-with-a-view-at-the-sea/6.jpg")?> alt="<?=$mes['happiness-with-a-view-at-the-sea-title']?>">
+							<div class="img-decoration zig-zag" style="transform: scaleX(-1); z-index: -1; bottom: -18px; left: -17%;"></div>
+							<div class="img-decoration curve-vertical" style="top: 20%; left: -6%;"></div>
 						</div>
 					</div>
 					<div class="location__flat-choose--btn">
 					<!--	<a href="/houses/" class="location__flat-choose--link"><?/* =$mes['Выбор квартиры'] */?> <i class="arrow-right-black"></i></a> -->
 					<a href="<?=UrlAdd('houses') ?>" class="apartments__get-prize"><?=$mes['Выбор квартиры']?> <i class="arrow-right-brown"></i></a>
-	
+
 					</div>
-					
-				</div>	
-				
+
+				</div>
+
 			</section>
 			<?/*<section class="location-map" id='location'>
 				<div class="location-map__inner">
@@ -211,12 +241,42 @@
 			max-width: 256px;
 			text-align: center;
 		}
+		.pict-poz {
+			margin-top: 128px;
+		}
+		.pict-dog {
+			width: 445px;
+			margin-top: 110px;
+		}
+		.text-disco {
+			margin-top: 100px;
+		}
+		.img-decoration{
+			position: absolute;
+		}
+		.location-about-pict{position: relative;}
+		.location-about__item-1 .curve-vertical {
+			position: absolute;
+			top: -52px;
+			left: 363px;
+		}
+		.pict-circle{
+			z-index: -1;
+		}
+		.location-about__item-1 .pict-angle-lines {
+			bottom: 25%;
+			left: 368px;
+		}
+		.location-about__item-1 .pict-circle {
+			bottom: -30px;
+			left: 90%;
+		}
+		.location-about__advantages_item-2 .pict-angle-lines {
+			left: -25px;
+			bottom: 90px;
+		}
 		</style>
-		
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb1nF3LPA_ZOACIAdwgtrh0nrQd4NYybA&sensor=false"></script>	
-	
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCb1nF3LPA_ZOACIAdwgtrh0nrQd4NYybA&sensor=false"></script>
+
 <?php	 FooterAdd();		?>
-
-	
-	
-

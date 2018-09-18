@@ -13,16 +13,16 @@
     </g>
 
     <circle class="svg-circle" cx="51%" cy="52%" r="154.026"/>
-  
+
   <g class="svg-letters_lower">
     <path d="M175.733,260.505h-3.996v12.744h3.618c2.268,0,3.996-0.54,5.184-1.674s1.782-2.7,1.782-4.806c0-1.944-0.594-3.51-1.728-4.59
       C179.405,261.045,177.785,260.505,175.733,260.505 M175.571,270.981h-1.134v-8.262h1.458c2.43,0,3.618,1.35,3.618,4.104
       C179.513,269.577,178.217,270.981,175.571,270.981"/>
-    <polygon points="197.279,267.687 197.279,265.473 192.959,265.473 192.959,262.719 197.603,262.719 197.603,260.505 
+    <polygon points="197.279,267.687 197.279,265.473 192.959,265.473 192.959,262.719 197.603,262.719 197.603,260.505
       190.259,260.505 190.259,273.195 197.603,273.195 197.603,270.981 192.959,270.981 192.959,267.687 "/>
     <path d="M210.455,268.065c-0.378,1.35-0.594,2.268-0.648,2.808c-0.054-0.216-0.108-0.648-0.27-1.242
       c-0.162-0.594-0.27-1.134-0.432-1.566l-2.376-7.56h-2.7l4.32,12.744h2.916l4.32-12.744h-2.7L210.455,268.065L210.455,268.065z"/>
-    <polygon points="229.517,267.687 229.517,265.473 225.197,265.473 225.197,262.719 229.841,262.719 229.841,260.505 
+    <polygon points="229.517,267.687 229.517,265.473 225.197,265.473 225.197,262.719 229.841,262.719 229.841,260.505
       222.497,260.505 222.497,273.195 229.841,273.195 229.841,270.981 225.197,270.981 225.197,267.687 "/>
     <polygon points="240.533,270.981 240.533,260.505 237.833,260.505 237.833,273.195 245.717,273.195 245.717,270.981 "/>
     <path d="M258.785,260.289c-1.944,0-3.456,0.54-4.482,1.674s-1.566,2.754-1.566,4.86c0,2.106,0.54,3.726,1.566,4.86
@@ -37,11 +37,11 @@
     <path d="M296.045,270.225L296.045,270.225l-3.078-9.72h-3.672v12.744h2.43v-5.94c0-0.702-0.054-2.052-0.162-4.05h0.054l3.078,9.99
       h2.484l3.294-9.936h0.054c-0.054,1.62-0.108,2.592-0.108,2.97c0,0.378,0,0.702,0,0.972v5.994h2.538v-12.744h-3.726L296.045,270.225
       L296.045,270.225z"/>
-    <polygon points="318.455,267.687 318.455,265.473 314.135,265.473 314.135,262.719 318.779,262.719 318.779,260.505 
+    <polygon points="318.455,267.687 318.455,265.473 314.135,265.473 314.135,262.719 318.779,262.719 318.779,260.505
       311.435,260.505 311.435,273.195 318.779,273.195 318.779,270.981 314.135,270.981 314.135,267.687 "/>
     <path d="M335.627,266.499c0,0.702,0.054,1.836,0.108,3.51h-0.054l-5.508-9.504h-3.402v12.744h2.43v-5.994
       c0-0.702-0.054-1.944-0.162-3.618h0.054l5.508,9.612h3.402v-12.744h-2.43v5.994H335.627z"/>
-    <polygon points="354.959,262.719 354.959,260.505 345.347,260.505 345.347,262.719 348.803,262.719 348.803,273.195 
+    <polygon points="354.959,262.719 354.959,260.505 345.347,260.505 345.347,262.719 348.803,262.719 348.803,273.195
       351.503,273.195 351.503,262.719 "/>
   </g>
   <g class="svg-letters_upper">
@@ -323,10 +323,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);   
+    transform: translate(-50%, -50%);
     stroke: #fff;
     width: 75px;
-    height: 75px;  
+    height: 75px;
 }
 
 .precent-block {
@@ -526,32 +526,32 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
 .perfect_white {
     stroke: #fff;
     fill: #fff;
-} 
+}
 
 .perfect-letter {
     animation: perfectGropFade 1s forwards;
     opacity: 0;
 }
 .perfect-letter_p {
-    animation-delay: 0.3s;  
+    animation-delay: 0.3s;
 }
 .perfect-letter_e1 {
     animation-delay: 0.4s;
 }
 .perfect-letter_r {
-    animation-delay: 0.5s;        
+    animation-delay: 0.5s;
 }
 .perfect-letter_f {
-    animation-delay: 0.6s;        
+    animation-delay: 0.6s;
 }
 .perfect-letter_e2 {
-    animation-delay: 0.7s;        
+    animation-delay: 0.7s;
 }
 .perfect-letter_c {
-    animation-delay: 0.8s;        
+    animation-delay: 0.8s;
 }
 .perfect-letter_t {
-    animation-delay: 0.9s;        
+    animation-delay: 0.9s;
 }
 
 .group-letter {
@@ -559,19 +559,19 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
     opacity: 0;
 }
 .group-letter_g {
-    animation-delay: 1s;  
+    animation-delay: 1s;
 }
 .group-letter_r {
     animation-delay: 1.2s;
 }
 .group-letter_o {
-    animation-delay: 1.3s;        
+    animation-delay: 1.3s;
 }
 .group-letter_u {
-    animation-delay: 1.4s;        
+    animation-delay: 1.4s;
 }
 .group-letter_p {
-    animation-delay: 1.5s;        
+    animation-delay: 1.5s;
 }
 
 @keyframes perfectGropFade {
@@ -586,7 +586,7 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
 
 .crown {
     animation: perfectGropSlideTop 1s 2s forwards;
-    opacity: 0; 
+    opacity: 0;
 }
 @keyframes perfectGropSlideTop {
     from {
@@ -602,7 +602,7 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
 
 .perfect_small-letter {
     animation: perfectGropSlideBottom 1s 2s forwards;
-    opacity: 0; 
+    opacity: 0;
 }
 @keyframes perfectGropSlideBottom {
     from {
@@ -695,7 +695,7 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
           localStorage.setItem('preloader', Date.now());
           return true;
         }
-        var hour = 3600 * 1000;  
+        var hour = 3600 * 1000;
         if(Date.now() - localStorage.getItem('preloader') < hour) {
           return false;
         } else {
@@ -716,7 +716,7 @@ path.svg-inner_a_1_2 {animation-delay: 2.3s;}
   //     sagapreloaderAnimation.init();
   // }
 
-  if(sagapreloaderAnimation.checkDate()) {
+  if(sagapreloaderAnimation.checkDate() && window.innerWidth > 768) {
     sagapreloaderAnimation.init();
   } else {
     sagapreloaderAnimation.preloaderContainer.style.display = 'none';
