@@ -27,7 +27,7 @@
 						<div class="webcam-video">
 							<div class="webcam-video__inner">
 								<div class="web-cam__online">
-									<iframe src="https://dnt.odessa.tv/kandinsky/cam2/" frameborder="0" allowfullscreen></iframe>
+									<iframe src="https://dnt.odessa.tv/kandinsky/cam3/" frameborder="0" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
@@ -37,7 +37,7 @@
 						<div class="webcam-video">
 							<div class="webcam-video__inner">
 								<div class="web-cam__online">
-									<iframe src="https://dnt.odessa.tv/kandinsky/cam3/" frameborder="0" allowfullscreen></iframe>
+									<iframe src="https://dnt.odessa.tv/kandinsky/cam2/" frameborder="0" allowfullscreen></iframe>
 								</div>
 							</div>
 						</div>
