@@ -1,3 +1,25 @@
+<?
+session_start();
+/*Utm 01.02.2018*/
+if ($_GET)
+{
+    $utm=array(
+        'utm_source' ,
+        'utm_medium',
+        'utm_campaign' ,
+        'utm_term',
+        'utm_content'
+    );
+    foreach($_GET as $key=>$t)
+    {
+        $metka= array_search($key,$utm);
+        if ($metka!==FALSE)
+        {
+            $_SESSION[$utm[$metka]]=$t;
+        }
+    }
+}
+/*Utm End*/?>
 <header>
 	<div class="preloader">
 		<div class="preloader__svg">
@@ -29,7 +51,7 @@
 			     inkscape:current-layer="svg21"
 			     inkscape:pagecheckerboard="true" />
 			  <g
-			     id="g59" 
+			     id="g59"
 			     transform="translate(30.421053,12.052649)">
 			    <path
 			       style="fill:none;stroke:#e5e5e5;stroke-width:3;" id="preloaderSVG"
@@ -37,7 +59,7 @@
 			       id="path83"
 			       />
 			  </g>
-			 
+
 			  <path
 			     style="fill:none;stroke:#e5e5e5;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1" class="path-line"
 			     d="M 339.10525,-0.07892862 135.10526,403.44737 v 0"
@@ -191,46 +213,61 @@
 <img src="/img/developers/saga-logo.svg">
 </a></div>  */?>
 			<div class="header__tel">
-				<span class="ringo-phone"><?=$mes['tel-format']?></span>
+				<a id="ringo_link" href="">
+					<span id="ringo-phone" class="ringo-phone"><?=$mes['tel-format']?></span>
+				</a>
 			</div>
+			<style media="screen">
+				@media only screen and (max-width: 768px) {
+					.header__tel{
+						font-size: 22px;
+						top: 60px;
+					}
+				}
+			</style>
+			<script type="text/javascript">
+				document.getElementById("ringo_link").onclick = function(){
+
+						var elem  = document.getElementById("ringo_link");
+						var source = document.getElementById('ringo-phone').innerHTML;
+						elem.href = 'tel:' + source;
+
+		   };
+			</script>
 		<!-- </div> -->
 	</div>
-	
+
 	<div class="decorative-circle"></div>
 	<div class="header__menu-btn_wrapper">
 
 		<div class="header__menu-btn">
-			<div class="menu-title"><?=$mes['Меню']?></div>		
+			<div class="menu-title"><?=$mes['Меню']?></div>
 			<div class="menu-btn">
 				<div class="menu__line menu__line-1"></div>
 				<div class="menu__line menu__line-2"></div>
 				<div class="menu__line menu__line-3"></div>
 			</div>
 		</div>
-<?php
-						
-							$correct_mas=explode("/", $_SERVER['REQUEST_URI']);
-							
-						if ($correct_mas[1]=='en'){
-						$Href=str_replace('/'.$correct_mas[1].'/', '/', $_SERVER['REQUEST_URI']);
-						$HrefMes='Рус';
-							
-						}
-						else{
-							$Href='/en'.$_SERVER['REQUEST_URI'];
-							$HrefMes='Eng';
-						}
-							
+		<?php
+			$correct_mas=explode("/", $_SERVER['REQUEST_URI']);
+				if ($correct_mas[1]=='en'){
+				$Href=str_replace('/'.$correct_mas[1].'/', '/', $_SERVER['REQUEST_URI']);
+				$HrefMes='Рус';
+				}
+				else{
+					$Href='/en'.$_SERVER['REQUEST_URI'];
+					$HrefMes='Eng';
+				}
 ?>
-	<a href="<?=$Href?>" style="color:inherit;"><div class="header__lang">
+	<a href="<?=$Href?>" style="color:inherit;">
+		<div class="header__lang">
 			<div class="menu-title__lang"><?=$mes['Язык']?></div>
-			<div class="menu-btn1">
-				<span class="lang__text"><?=$HrefMes?></span>
-				
-			</div>
-		</div></a>
-				
+			<div class="menu-btn1"><span class="lang__text"><?=$HrefMes?></span></div>
+		</div>
+	</a>
+
 	</div>
+
 	<div class="menu-open">
 			<div class="menu-open__inner">
 				<div class="table-row">
@@ -248,50 +285,50 @@
 							<li id="menu-item-0" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/architection/architection-bg.jpg" data-color="true">
 									<a href="<?=UrlAdd()?>" class="menu-open__link"><?=$mes['Главная']?></a>
-									
-								</div>
-							</li>
-							<li id="menu-item-1" class="menu-open__item">
-								<div class="menu-open__item_inner" data-img="/img/happiness-with-a-view-at-the-sea/happiness-with-a-view-at-the-sea-bg.jpg" data-color="true">
-									<a href="<?=UrlAdd('happiness-with-a-view-at-the-sea')?>" class="menu-open__link"><?=$mes['happiness-with-a-view-at-the-sea-h1']?></a>
 
 								</div>
 							</li>
+							<li id="menu-item-1" class="menu-open__item">
+								<div class="menu-open__item_inner" data-img="/img/menu-open/about_the_project.jpg" data-color="true">
+									<a href="<?=UrlAdd('happiness-with-a-view-at-the-sea')?>" class="menu-open__link"><?=$mes['happiness-with-a-view-at-the-sea-h1']?></a>
+
+								</div>
+							</li> 
 							<li id="menu-item-2" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/location.jpg"  data-color="true">
 									<a href="<?=UrlAdd('location')?>" class="menu-open__link"><?=$mes['Расположение']?></a>
-									
+
 								</div>
 							</li>
 							<li id="menu-item-3" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/advantages.jpg" data-color="true">
 									<a href="<?=UrlAdd('advantages')?>" class="menu-open__link"><?=$mes['Преимущества']?></a>
-									
+
 								</div>
 							</li>
 							<li id="menu-item-4" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/render-img.jpg" data-color="true">
 									<a href="<?=UrlAdd('architection')?>" class="menu-open__link"><?=$mes['Архитектура']?></a>
-									
+
 								</div>
 							</li>
 							<li id="menu-item-5" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/infostructure.jpg" data-color="true">
 									<a href="<?=UrlAdd('infostruction')?>" class="menu-open__link"><?=$mes['Инфраструктура']?></a>
-									
+
 								</div>
 							</li>
 							<li id="menu-item-6" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/flats.jpg"  data-color="true">
 									<a href="<?=UrlAdd('houses')?>" class="menu-open__link"><?=$mes['Квартиры']?></a>
-									
+
 								</div>
 							</li>
-							
+
 							<li id="menu-item-7" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/construction.jpg">
 									<a href="<?=UrlAdd('construction')?>" class="menu-open__link"><?=$mes['Строительство']?></a>
-									
+
 								</div>
 							</li>
 							<li id="menu-item-8" class="menu-open__item">
@@ -308,13 +345,13 @@
 							<li id="menu-item-10" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/documentation.jpg"  data-color="true">
 									<a href="<?=UrlAdd('documentation')?>" class="menu-open__link"><?=$mes['Документы']?></a>
-									
+
 								</div>
 							</li>
 							<li id="menu-item-11" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/news.jpg" data-color="true">
 									<a href="<?=UrlAdd('news')?>" class="menu-open__link"><?=$mes['Новости']?></a>
-									
+
 								</div>
 							</li>
 							<li id="menu-item-12" class="menu-open__item">
@@ -344,6 +381,7 @@
 				</div>
 			</div>
 		</div>
+
 		<div class="perfect_box <?if(count(explode("/", $_SERVER['REQUEST_URI']))>=3){echo 'saga_logo_off';}?>">
 			<div class="perfect_box_item">
 				<a href="https://perfect-group.ua/ru/" target="_blank" title="Perfect Group">
@@ -413,7 +451,6 @@
 <div class="promotions_btn" style="display:none;">
 				<a href="<?=$mes['Акционные предложения ссылка']?>" class="promotions_btn__link"><?=$mes['Акционные предложения']?></a>
 			</div>
-
 
 <style>
 .saga-logo {
