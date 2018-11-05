@@ -92,7 +92,7 @@
 					</div>
 					<div class="location__flat-choose--btn">
 					<!--	<a href="/houses/" class="location__flat-choose--link"><?/* =$mes['Выбор квартиры'] */?> <i class="arrow-right-black"></i></a> -->
-					<a href="<?=UrlAdd('houses') ?>" class="apartments__get-prize"><?=$mes['Выбор квартиры']?> <i class="arrow-right-brown"></i></a>
+					<a href="<?=UrlAdd('houses') ?>" class="apartments__get-bat"><?=$mes['Выбор квартиры']?> <i class="arrow-right-brown"></i></a>
 	
 					</div>
 					
@@ -205,11 +205,16 @@
 		.location-main__description {
 			background: rgba(255,255,255,.6);
 		}
-		.apartments__get-prize {
+		.apartments__get-bat {
 			display: block;
 			margin: 20px auto;
 			max-width: 256px;
 			text-align: center;
+			border: 1px solid #e6e6e6;
+    
+			padding: 10px 25px;
+			text-decoration: none;
+			color: #234c5a;
 		}
 		</style>
 		
