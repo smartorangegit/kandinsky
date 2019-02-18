@@ -218,6 +218,17 @@ if ($_GET)
 					<span id="ringo-phone" class="ringo-phone"><?=$mes['tel-format']?></span>
 				</a>
 			</div>
+<<<<<<< HEAD
+=======
+			<style media="screen">
+				@media only screen and (max-width: 768px) {
+					.header__tel{
+						font-size: 22px;
+						top: 60px;
+					}
+				}
+			</style>
+>>>>>>> 810e6d56ea1f2a7168eb174e60359436139dcd98
 			<script type="text/javascript">
 				document.getElementById("ringo_link").onclick = function(){
 
@@ -331,6 +342,7 @@ if ($_GET)
 							</li>
 							<li id="menu-item-8" class="menu-open__item">
 								<div class="menu-open__item_inner" data-img="/img/menu-open/flats.jpg"  data-color="true">
+<<<<<<< HEAD
 									<a href="<?=UrlAdd('parametrs/odnokomnatnaya')?>" class="menu-open__link"><?=$mes['1-комнатные']?></a>
 								</div>
 							</li><li id="menu-item-9" class="menu-open__item">
@@ -345,6 +357,14 @@ if ($_GET)
 							</li>
 
 							<li id="menu-item-11" class="menu-open__item">
+=======
+									<a href="<?=UrlAdd('houses')?>" class="menu-open__link"><?=$mes['Квартиры']?></a>
+
+								</div>
+							</li>
+
+							<li id="menu-item-7" class="menu-open__item">
+>>>>>>> 810e6d56ea1f2a7168eb174e60359436139dcd98
 								<div class="menu-open__item_inner" data-img="/img/menu-open/construction.jpg">
 									<a href="<?=UrlAdd('construction')?>" class="menu-open__link"><?=$mes['Строительство']?></a>
 

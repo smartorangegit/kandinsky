@@ -1,14 +1,13 @@
 <?php  /*All function*/ require_once('function.php');  
-$postnumbers = is_numeric($_POST['offset']) ? $_POST['offset'] : die();
-$offset = is_numeric($_POST['number']) ? $_POST['number'] : die();
-  
-   
+$offset = is_numeric($_POST['offset']) ? $_POST['offset'] : die();
+$postnumbers = is_numeric($_POST['number']) ? $_POST['number'] : die();
+
 if ($_POST['page'])  {
 	require_once('gallery-lib.php'); 
 
 	Gallery_list($postnumbers, $offset, $img);
 	
-}else {
+} else {
 	$ReaNews =LoadingNews($postnumbers, $offset);
 	   
 	 $i=0; foreach($ReaNews['ReaNews'] as $key=>$s): $i++; ?>
@@ -30,6 +29,7 @@ if ($_POST['page'])  {
 							</a>
 							<p class="news__item_about"><?=$s['mini_text']?></p>
 							<a href="<?UrlAdd($s["urls"])?>" class="news__item_btn"><?=$mes['i-mes7']?><i class="arrow-gray-right"></i></a>
+							<span class="news__date"><?= date("d.m.Y", strtotime($s['date']));?></span>
 						</div>
 					<?	} else { ?>
 
@@ -41,6 +41,7 @@ if ($_POST['page'])  {
 							</a>
 							<p class="news__item_about"><?=$s['mini_text']?></p>
 							<a href="<?UrlAdd($s["urls"])?>" class="news__item_btn"><?=$mes['i-mes7']?><i class="arrow-gray-right"></i></a>
+							<span class="news__date"><?= date("d.m.Y", strtotime($s['date']));?></span>
 						</div>
 						<div class="news__item_pict">
 						<a  href="<?UrlAdd($s["urls"])?>">

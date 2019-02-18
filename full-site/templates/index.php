@@ -9,7 +9,11 @@
 		</div> -->
 
      	<? /* include('preloader_saga.php'); */ ?>
+<<<<<<< HEAD
 		<? include($_SERVER['DOCUMENT_ROOT'].'modules/inc/preloader_new/preloader_vibori.php');  ?>
+=======
+		<? include($_SERVER['DOCUMENT_ROOT'].'modules/inc/preloader_new/preloader_new.php');  ?>
+>>>>>>> 810e6d56ea1f2a7168eb174e60359436139dcd98
 
         <section class="home__slider">
             <div class="sl">

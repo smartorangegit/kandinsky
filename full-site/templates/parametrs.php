@@ -9,7 +9,7 @@
 				
 				<div class="parametrs__filter">
 					<div class="parametrs__back-btn">
-						<a class="parametrs__back_link" href="javascript:history.go(-1)" mce_href="javascript:history.go(-1)" class=""><?=$mes['Назад']?><i class="arrow-left-brown"></i></a>
+						<a class="parametrs__back_link" href="<?=UrlAdd('houses')?>"  class=""><?=$mes['Назад']?><i class="arrow-left-brown"></i></a>
 					</div>
 					<div class="parametrs__filter_item">
 						<h3 class="parametrs__filter_item--title"><?=$mes['fl-mes9']?></h3>
