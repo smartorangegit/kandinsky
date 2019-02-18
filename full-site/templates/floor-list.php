@@ -1,6 +1,30 @@
 <?php  HeadAdd(['robots'=>'noindex,nofollow', 'head'=>true]);?>
 	<div class="wrapper">
 		<section class="apartments">
+			<style media="screen">
+				.apartments__plan{
+					margin-top: 65px;
+					margin-bottom: 40px;
+				}
+				.apartments__inner {
+			    background: url('/img/apartments/volna.svg');
+			    background-position-x: right;
+			    background-size: 86% 125%;
+					transition: 0.35s;
+			}
+			@media only screen and (max-width: 768px) {
+				.apartments__inner {
+					 background-position-x: left;
+					 background-size: 120% 120%;
+					 }
+			}
+			@media only screen and (max-width: 450px) {
+					.apartments__inner {
+		    background-position-x: center;
+		    background-size: 175% 122%;
+				}
+			}
+			</style>
 			<!-- header -->
 			<?php HeaderInclude();?>
 			<!-- header-end-->
@@ -19,6 +43,11 @@
 							<li class="apartments__color_item"><i class="circle fiol-circle"></i><?=$mes['fl-mes4']?></li>
 						</ul>
 						<div class="apartments__plan">
+						<!-- <img src="/img/apartments/volna.svg&#10;    " style="
+    position: absolute;
+    top: -8%;
+    right: -9%;
+"> -->
 							<?include(svg_plan($svg=$si['img']));?>
 						</div>
 					</div>

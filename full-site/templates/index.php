@@ -8,28 +8,38 @@
 			</div>
 		</div> -->
 
-     	<?
-			// include('preloader_saga.php'); 
-			?>
+     	<? /* include('preloader_saga.php'); */ ?>
+		<? include($_SERVER['DOCUMENT_ROOT'].'modules/inc/preloader_new/preloader_vibori.php');  ?>
 
+        <section class="home__slider">
+            <div class="sl">
+                <img <?img("/img/main/render-img.jpg")?> alt="">
+                <img <?img("/img/main/KAN_VIEW_2_DUSK_FINAL_v2_result.jpg")?> alt="">
+<!--                <img --><?//img("/img/main/KAN_VIEW_3_EVENINGFUN (1)_result.jpg")?><!-- alt="">-->
+            </div>
+            <div class="home__slider-btn">
+            	<div class="home__slider-btn-prev"><i class="arrow-left-brown"></i></div>
+            	<div class="home__slider-btn-next"><i class="arrow-left-brown"></i></div>
+            </div>
 
-		<section class="video-container">
-			<div class="main-video">
-				<video playsinline autoplay muted loop class="main-video-bg" id="bgvideo">
-			  	<source src="/video/clipchamp.mp4" type='video/mp4;'></source>
-					<!-- <source src="video/video.ogv" type='video/ogg;'></source> -->
-					<source src="video/video.webm" type='video/webm;'></source>
-				</video>
-			</div>
-			<div class="container">
-				<div class="main-page__inner">
-					<div class="main-page__title">
-						<h1 class="h1"><?H1page()?> <i class="brown-line"></i></h1>
-						<p class="main-page__title_text"><?=$mes['i-mes1']?></p>
-					</div>
-				</div>
-			</div>
-		</section>
+        </section>
+<!--		<section class="video-container">-->
+<!--			<div class="main-video">-->
+<!--				<video playsinline autoplay muted loop class="main-video-bg" id="bgvideo">-->
+<!--			  	<source src="/video/clipchamp.mp4" type='video/mp4;'></source>-->
+<!--					<!-- <source src="video/video.ogv" type='video/ogg;'></source> -->-->
+<!--					<source src="video/video.webm" type='video/webm;'></source>-->
+<!--				</video>-->
+<!--			</div>-->
+<!--			<div class="container">-->
+<!--				<div class="main-page__inner">-->
+<!--					<div class="main-page__title">-->
+<!--						<h1 class="h1">--><?//H1page()?><!-- <i class="brown-line"></i></h1>-->
+<!--						<p class="main-page__title_text">--><?//=$mes['i-mes1']?><!--</p>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</div>-->
+<!--		</section>-->
 		<section class="main-page">
 			<!-- header -->
 			<?php HeaderInclude();?>
@@ -38,8 +48,18 @@
 				<a class="view-more__link" href=""><span><?=$mes['Смотреть сайт']?></span></a>
 				<div class="view-more__line"></div>
 			</div>
+
+			<div class="container block-title">
+				<div class="main-page__inner">
+					<div class="main-page__title">
+						<h1 class="h1"><?H1page()?> <i class="brown-line"></i></h1>
+						<p class="main-page__title_text"><?=$mes['i-mes1']?></p>
+					</div>
+				</div>
+			</div>
+
 		</section>
-		<div class="content">
+		<div class="content js-content">
 			<div class="grad__title">
 				<p class="grad__title_text">
 					KANDINSKY
@@ -100,10 +120,13 @@
 						</div>
 						<h2 class="about__title"><?=$mes['i-mes8']?></h2>
 						<p class="about__text"><?=$mes['i-mes9']?></p>
+						<div class="about__button">
+							<a href="<?=UrlAdd('houses')?>" class="about__button-choice"><?=$mes['Выбрать апартаменты']?></a>
+						</div>
 						<?php /*<a id="main-about-popup-2" href="" class="about__btn"><?=$mes['i-mes7']?><i class="arrow-gray-right"></i></a>*/?>
 					</div>
 					<div class="about-company__pict">
-						<img <?img("/img/main/render-img.jpg")?> alt="">
+                        <img <?img("/img/main/render-img.jpg")?> alt="">
 					</div>
 				</div>
 				<?/*
@@ -122,6 +145,136 @@
 					</div>
 				</div>*/?>
 			</section>
+			<!-- begin apartment-preview -->
+				<section class="apartment-preview">
+					<div class="container">
+						<div class="apartment-preview__title"><?=$mes['Планировки квартир']?></div>
+						<div class="apartment-preview__inner">
+							<a href="<?=$Href?>parametrs/odnokomnatnaya/" class="apartment-preview__item">
+								<div class="apartment-preview__img">
+									<img src="/img/houses/house3_black/floor20/A1_4.png" alt="">
+								</div>
+								<div class="apartment-preview__subtitle">1 комната</div>
+							</a>
+							<a href="<?=$Href?>parametrs/dvuhkomnatnaya/" class="apartment-preview__item">
+								<div class="apartment-preview__img">
+									<img src="/img/houses/house3_black/floor20/A1_14.png" alt="">
+								</div>
+								<div class="apartment-preview__subtitle">2 комнаты</div>
+							</a>
+							<a href="<?=$Href?>parametrs/trehkomnatnaya/" class="apartment-preview__item">
+								<div class="apartment-preview__img">
+									<img src="/img/houses/house4_black/floor22/A3_2.png" alt="">
+								</div>
+								<div class="apartment-preview__subtitle">3 комнаты</div>
+							</a>
+						</div>
+					</div>
+				</section>
+			<!-- end apartment preview -->
+
+			<section class="location-map location-map-home" id='location'>
+				<div class="location-map__inner">
+					<div id="map" class="main-map"></div>
+					<div class="markers__text">
+						<div class="main__marker">
+							<div class="map__info-marker">
+								<p><img class="main__marker_logo" src="/img/main-logo.png" height="52" width="165" alt=""></p>
+							    <p><i class="map-ico"></i> <?=$mes['i-mes14']?> <?=$mes['i-mes13-contact']?></p>
+							</div>
+						</div>
+					</div>
+					<div class="map__infostruction">
+						<ul class="map__infostruction_list">
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="suvenire"><span class="map-ico__wrapper"><i class="suvenire-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Сувенирные магазины']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="gym"><span class="map-ico__wrapper"><i class="gym-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Спорт комплексы']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="highschool"><span class="map-ico__wrapper"><i class="highschool-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Высшие учебные заведения']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="kinderGarden"><span class="map-ico__wrapper"><i class="kinder-garden-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Детские садики']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="restaurant"><span class="map-ico__wrapper"><i class="restaurant-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Кафе, рестораны']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="school"><span class="map-ico__wrapper"><i class="school-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Школы']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="dantist"><span class="map-ico__wrapper"><i class="dantist-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Стоматология']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="aptec"><span class="map-ico__wrapper"><i class="aptec-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Аптеки']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="shop"><span class="map-ico__wrapper"><i class="market-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Супермаркеты']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="market"><span class="map-ico__wrapper"><i class="shop-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Тортговые центры']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="bank"><span class="map-ico__wrapper"><i class="bank-mini-ico"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Банки']?></span></button>
+							</li>
+							<li class="js-map__infostruction_item">
+								<button class="btn-filter" data-type="park"><span class="map-ico__wrapper"><i class="tree-yellow-silhouette-shape"></i></span>
+								<span class="map_infostruction_item--text"><?=$mes['Парки']?></span></button>
+							</li>
+                            <li class="map__infostruction_item map__infostruction_item-delete">
+                                <button class="btn-filter" data-type="delete"><span class="map-ico__wrapper"></span>
+                                <span class="map_infostruction_item--text"><?=$mes['Очистить']?></span></button>
+                            </li>
+						</ul>
+					</div>
+					<div class="map__info_container">
+						<div class="map__info">
+							<p class="map__info_title"><?=$mes['пешком']?></p>
+							<p class="map__info_subtitle"><?=$mes['1 минута']?></p>
+							<ul class="map__info_list">
+								<li class="map__info_item"><?=$mes['Пляж']?></li>
+								<li class="map__info_item"><?=$mes['Ботанический сад']?></li>
+							</ul>
+							<p class="map__info_subtitle"><?=$mes['3 минуты']?></p>
+							<ul class="map__info_list">
+								<li class="map__info_item"><?=$mes['Ближайший супермаркет']?></li>
+							</ul>
+							<p class="map__info_subtitle"><?=$mes['10 минут']?></p>
+							<ul class="map__info_list">
+								<li class="map__info_item"><?=$mes['ТРЦ Сады победы']?></li>
+							</ul>
+							<p class="map__info_title"><?=$mes['на авто']?></p>
+							<p class="map__info_subtitle"><?=$mes['5 минут']?></p>
+							<ul class="map__info_list">
+								<li class="map__info_item"><?=$mes['Аркадия']?></li>
+							</ul>
+							<p class="map__info_subtitle"><?=$mes['10 минут']?></p>
+							<ul class="map__info_list">
+								<li class="map__info_item"><?=$mes['Улица Дерибасовская']?></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="location-map__button">
+						<a href="<?=UrlAdd('infostruction')?>" class="about__button-choice"><?=$mes['Больше об инфраструктуре']?></a>
+					</div>
+				</div>
+        	</section>
+
 			<div class="block-end">
 				<span class="curve-line"></span>
 			</div>
@@ -217,7 +370,7 @@
 				</div>
 			</section>
 		</div>
-
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDQM_WTbIKIz10I6bLIMI3qtbZR20CzGk"></script>
 <?php	 FooterAdd();		?>
 <!-- timer -->
  <div class="modal_window__container" style="display:none;">
@@ -296,7 +449,7 @@ position: absolute;
 }
 	</style>
 		<script type="text/javascript">
-		        var deadline = 'March 28 2018';
+		        var deadline = 'October 08 2017';
 				var t = getTimeRemaining(deadline);
 		        function getTimeRemaining(endtime){
 		      var t = Date.parse(endtime) - Date.parse(new Date());
@@ -343,5 +496,20 @@ initializeClock('clock', deadline);
 <script>
 $('.modal__close').click(function(){
 	$('.modal_window__container').fadeOut(1000)
-})
+});
+// scroll header
+// $(window).scroll(function() {
+// 	// проверка на докрутку до определенного элемента
+// 	var content =$('.js-content').offset().top;
+// 	//если мы докрутили до нужного элемента
+// 	if ($(this).scrollTop() > content) {
+// 		// создаем эффекты и анимацию
+// 		$("header").addClass("js-scroll");
+
+// 	}else{
+// 		$("header").removeClass("js-scroll");
+
+// 	}
+// });
+
 </script>
